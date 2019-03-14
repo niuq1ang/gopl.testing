@@ -13,6 +13,8 @@ type TestStruct struct {
 	Pointer  uintptr
 }
 
+
+////dfvefvefvi
 func (self TestStruct) valueTest() {
 	fmt.Printf("Value: %p\n", &self)
 }
