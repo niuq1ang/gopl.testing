@@ -1,0 +1,2827 @@
+{
+    "fields": [
+        {
+            "uuid": "TmKNP8NM",
+            "name": "1234567890123456",
+            "name_pinyin": "1234567890123456",
+            "desc": "",
+            "type": 2,
+            "default_value": null,
+            "renderer": 1,
+            "filter_option": 0,
+            "search_option": 1,
+            "create_time": 1538970200,
+            "built_in": false,
+            "fixed": false,
+            "options": null
+        },
+        {
+            "uuid": "LBZnVETg",
+            "name": "Android系统版本",
+            "name_pinyin": "Androidxi4tong3ban3ben3",
+            "desc": "",
+            "type": 1,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1535539298,
+            "built_in": false,
+            "fixed": false,
+            "options": [
+                {
+                    "uuid": "YSHVr47n",
+                    "value": "V7.1",
+                    "selected": false,
+                    "background_color": "#307fe2",
+                    "color": "#fff",
+                    "desc": ""
+                },
+                {
+                    "uuid": "AW97R7d7",
+                    "value": "V7.0",
+                    "selected": false,
+                    "background_color": "#00b388",
+                    "color": "#fff",
+                    "desc": ""
+                },
+                {
+                    "uuid": "2iMYFhqk",
+                    "value": "V6.0",
+                    "selected": false,
+                    "background_color": "#f1b300",
+                    "color": "#fff",
+                    "desc": ""
+                },
+                {
+                    "uuid": "R7W6ywyw",
+                    "value": "V5.1",
+                    "selected": false,
+                    "background_color": "#ff6a39",
+                    "color": "#fff",
+                    "desc": ""
+                },
+                {
+                    "uuid": "KY8dCUSu",
+                    "value": "V5.0",
+                    "selected": false,
+                    "background_color": "#e63422",
+                    "color": "#fff",
+                    "desc": ""
+                },
+                {
+                    "uuid": "9YvqSkN9",
+                    "value": "V4.4",
+                    "selected": false,
+                    "background_color": "#aa8066",
+                    "color": "#fff",
+                    "desc": ""
+                },
+                {
+                    "uuid": "YGna26a4",
+                    "value": "V4.3",
+                    "selected": false,
+                    "background_color": "#9678d3",
+                    "color": "#fff",
+                    "desc": ""
+                },
+                {
+                    "uuid": "WsGVN3DQ",
+                    "value": "V4.2",
+                    "selected": false,
+                    "background_color": "#e0ecfb",
+                    "color": "#307fe2",
+                    "desc": ""
+                },
+                {
+                    "uuid": "JXa8apD1",
+                    "value": "V4.1",
+                    "selected": false,
+                    "background_color": "#d9f4ed",
+                    "color": "#00b388",
+                    "desc": ""
+                },
+                {
+                    "uuid": "95qTtJS7",
+                    "value": "V4.0",
+                    "selected": false,
+                    "background_color": "#fdf4d9",
+                    "color": "#f1b300",
+                    "desc": ""
+                },
+                {
+                    "uuid": "5GAvJQmi",
+                    "value": "V2.3",
+                    "selected": false,
+                    "background_color": "#ffe9e2",
+                    "color": "#ff6a39",
+                    "desc": ""
+                }
+            ]
+        },
+        {
+            "uuid": "Qg23Q4gF",
+            "name": "版本号",
+            "name_pinyin": "ban3ben3hao4",
+            "desc": "",
+            "type": 2,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1535539298,
+            "built_in": false,
+            "fixed": false,
+            "options": null
+        },
+        {
+            "uuid": "field001",
+            "name": "标题",
+            "name_pinyin": "biao1ti2",
+            "desc": "",
+            "type": 2,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1472687999999999,
+            "built_in": true,
+            "fixed": true,
+            "options": null
+        },
+        {
+            "uuid": "8qLh4CMq",
+            "name": "BUG",
+            "name_pinyin": "BUG",
+            "desc": "",
+            "type": 2,
+            "default_value": null,
+            "renderer": 1,
+            "filter_option": 0,
+            "search_option": 1,
+            "create_time": 1587654954,
+            "built_in": false,
+            "fixed": false,
+            "options": null
+        },
+        {
+            "uuid": "Gyo4TDNS",
+            "name": "bug",
+            "name_pinyin": "bug",
+            "desc": "",
+            "type": 2,
+            "default_value": null,
+            "renderer": 1,
+            "filter_option": 0,
+            "search_option": 1,
+            "create_time": 1587655280,
+            "built_in": false,
+            "fixed": false,
+            "options": null
+        },
+        {
+            "uuid": "3rYn53yQ",
+            "name": "BUgBUGBUG",
+            "name_pinyin": "BUgBUGBUG",
+            "desc": "",
+            "type": 2,
+            "default_value": null,
+            "renderer": 1,
+            "filter_option": 0,
+            "search_option": 1,
+            "create_time": 1587454161,
+            "built_in": false,
+            "fixed": false,
+            "options": null
+        },
+        {
+            "uuid": "62nFmvSD",
+            "name": "BUG-停留次数",
+            "name_pinyin": "BUG-ting2liu2ci4shu4",
+            "desc": "",
+            "type": 41,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1587655314,
+            "built_in": true,
+            "fixed": false,
+            "options": null,
+            "stay_settings": {
+                "field_type": 12,
+                "field_uuid": "field005",
+                "field_option_uuid": "8JwrfetQ"
+            }
+        },
+        {
+            "uuid": "J8fbi5rZ",
+            "name": "bug-停留次数",
+            "name_pinyin": "bug-ting2liu2ci4shu4",
+            "desc": "",
+            "type": 41,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1587654289,
+            "built_in": true,
+            "fixed": false,
+            "options": null,
+            "stay_settings": {
+                "field_type": 12,
+                "field_uuid": "field005",
+                "field_option_uuid": "9rpy8CMe"
+            }
+        },
+        {
+            "uuid": "KeDzWGk1",
+            "name": "bug-停留时间",
+            "name_pinyin": "bug-ting2liu2shi2jian1",
+            "desc": "",
+            "type": 42,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1587654289,
+            "built_in": true,
+            "fixed": false,
+            "options": null,
+            "stay_settings": {
+                "field_type": 12,
+                "field_uuid": "field005",
+                "field_option_uuid": "9rpy8CMe"
+            }
+        },
+        {
+            "uuid": "4MxXt22u",
+            "name": "BUG-停留时间",
+            "name_pinyin": "BUG-ting2liu2shi2jian1",
+            "desc": "",
+            "type": 42,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1587655314,
+            "built_in": true,
+            "fixed": false,
+            "options": null,
+            "stay_settings": {
+                "field_type": 12,
+                "field_uuid": "field005",
+                "field_option_uuid": "8JwrfetQ"
+            }
+        },
+        {
+            "uuid": "V7tLTuNB",
+            "name": "操作系统",
+            "name_pinyin": "cao1zuo4xi4tong3",
+            "desc": "",
+            "type": 1,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1535539298,
+            "built_in": false,
+            "fixed": false,
+            "options": [
+                {
+                    "uuid": "Lz5nwPNv",
+                    "value": "Windows 10",
+                    "selected": false,
+                    "background_color": "#307fe2",
+                    "color": "#fff",
+                    "desc": ""
+                },
+                {
+                    "uuid": "X3ApvKXo",
+                    "value": "Windows 8",
+                    "selected": false,
+                    "background_color": "#00b388",
+                    "color": "#fff",
+                    "desc": ""
+                },
+                {
+                    "uuid": "RwkCB7iT",
+                    "value": "Windows 7",
+                    "selected": false,
+                    "background_color": "#f1b300",
+                    "color": "#fff",
+                    "desc": ""
+                },
+                {
+                    "uuid": "9oLE4s3o",
+                    "value": "Windows Vista",
+                    "selected": false,
+                    "background_color": "#ff6a39",
+                    "color": "#fff",
+                    "desc": ""
+                },
+                {
+                    "uuid": "MCjqyKE2",
+                    "value": "Windows XP",
+                    "selected": false,
+                    "background_color": "#e63422",
+                    "color": "#fff",
+                    "desc": ""
+                },
+                {
+                    "uuid": "pn6v6jgD",
+                    "value": "macOS 10.1X",
+                    "selected": false,
+                    "background_color": "#aa8066",
+                    "color": "#fff",
+                    "desc": ""
+                },
+                {
+                    "uuid": "7Mdm4gU8",
+                    "value": "OS X 10.8-10.11",
+                    "selected": false,
+                    "background_color": "#9678d3",
+                    "color": "#fff",
+                    "desc": ""
+                },
+                {
+                    "uuid": "27i2FzoC",
+                    "value": "Mac OS X 10.0-10.7",
+                    "selected": false,
+                    "background_color": "#e0ecfb",
+                    "color": "#307fe2",
+                    "desc": ""
+                },
+                {
+                    "uuid": "nv6gASNN",
+                    "value": "Linux",
+                    "selected": false,
+                    "background_color": "#d9f4ed",
+                    "color": "#00b388",
+                    "desc": ""
+                },
+                {
+                    "uuid": "22jZVt19",
+                    "value": "xxx",
+                    "selected": false,
+                    "background_color": "#fdf4d9",
+                    "color": "#f1b300",
+                    "desc": ""
+                }
+            ]
+        },
+        {
+            "uuid": "HMt1wDSK",
+            "name": "测试提交-停留次数",
+            "name_pinyin": "ce4shi4ti2jiao1-ting2liu2ci4shu4",
+            "desc": "",
+            "type": 41,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1568053965,
+            "built_in": true,
+            "fixed": false,
+            "options": null,
+            "stay_settings": {
+                "field_type": 12,
+                "field_uuid": "field005",
+                "field_option_uuid": "TrzWVpB3"
+            }
+        },
+        {
+            "uuid": "EtYCpR9S",
+            "name": "测试提交-停留时间",
+            "name_pinyin": "ce4shi4ti2jiao1-ting2liu2shi2jian1",
+            "desc": "",
+            "type": 42,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1568053965,
+            "built_in": true,
+            "fixed": false,
+            "options": null,
+            "stay_settings": {
+                "field_type": 12,
+                "field_uuid": "field005",
+                "field_option_uuid": "TrzWVpB3"
+            }
+        },
+        {
+            "uuid": "SB1JqyeA",
+            "name": "测试中-停留次数",
+            "name_pinyin": "ce4shi4zhong1-ting2liu2ci4shu4",
+            "desc": "",
+            "type": 41,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1568053965,
+            "built_in": true,
+            "fixed": false,
+            "options": null,
+            "stay_settings": {
+                "field_type": 12,
+                "field_uuid": "field005",
+                "field_option_uuid": "PoFjsLUQ"
+            }
+        },
+        {
+            "uuid": "XuqmbFBx",
+            "name": "测试中-停留时间",
+            "name_pinyin": "ce4shi4zhong1-ting2liu2shi2jian1",
+            "desc": "",
+            "type": 42,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1568053965,
+            "built_in": true,
+            "fixed": false,
+            "options": null,
+            "stay_settings": {
+                "field_type": 12,
+                "field_uuid": "field005",
+                "field_option_uuid": "PoFjsLUQ"
+            }
+        },
+        {
+            "uuid": "TKzJWDiL",
+            "name": "处理中-停留次数",
+            "name_pinyin": "chu4li3zhong1-ting2liu2ci4shu4",
+            "desc": "",
+            "type": 41,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1587995608,
+            "built_in": true,
+            "fixed": false,
+            "options": null,
+            "stay_settings": {
+                "field_type": 12,
+                "field_uuid": "field005",
+                "field_option_uuid": "RtxS2mAH"
+            }
+        },
+        {
+            "uuid": "RyaKv8nx",
+            "name": "处理中-停留时间",
+            "name_pinyin": "chu4li3zhong1-ting2liu2shi2jian1",
+            "desc": "",
+            "type": 42,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1587995608,
+            "built_in": true,
+            "fixed": false,
+            "options": null,
+            "stay_settings": {
+                "field_type": 12,
+                "field_uuid": "field005",
+                "field_option_uuid": "RtxS2mAH"
+            }
+        },
+        {
+            "uuid": "field009",
+            "name": "创建时间",
+            "name_pinyin": "chuang4jian4shi2jian1",
+            "desc": "",
+            "type": 6,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1472687999999991,
+            "built_in": true,
+            "fixed": true,
+            "options": null
+        },
+        {
+            "uuid": "field003",
+            "name": "创建者",
+            "name_pinyin": "chuang4jian4zhe3",
+            "desc": "",
+            "type": 8,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1472687999999997,
+            "built_in": true,
+            "fixed": true,
+            "options": null
+        },
+        {
+            "uuid": "VDYoccLw",
+            "name": "待处理-停留次数",
+            "name_pinyin": "dai4chu4li3-ting2liu2ci4shu4",
+            "desc": "",
+            "type": 41,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1587995608,
+            "built_in": true,
+            "fixed": false,
+            "options": null,
+            "stay_settings": {
+                "field_type": 12,
+                "field_uuid": "field005",
+                "field_option_uuid": "DGp2aAw6"
+            }
+        },
+        {
+            "uuid": "C8qDJ2sG",
+            "name": "待处理-停留时间",
+            "name_pinyin": "dai4chu4li3-ting2liu2shi2jian1",
+            "desc": "",
+            "type": 42,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1587995608,
+            "built_in": true,
+            "fixed": false,
+            "options": null,
+            "stay_settings": {
+                "field_type": 12,
+                "field_uuid": "field005",
+                "field_option_uuid": "DGp2aAw6"
+            }
+        },
+        {
+            "uuid": "QQVZqJHS",
+            "name": "待回归-停留次数",
+            "name_pinyin": "dai4hui2gui1-ting2liu2ci4shu4",
+            "desc": "",
+            "type": 41,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1568053965,
+            "built_in": true,
+            "fixed": false,
+            "options": null,
+            "stay_settings": {
+                "field_type": 12,
+                "field_uuid": "field005",
+                "field_option_uuid": "UtYauic5"
+            }
+        },
+        {
+            "uuid": "CNF1YMvC",
+            "name": "待回归-停留时间",
+            "name_pinyin": "dai4hui2gui1-ting2liu2shi2jian1",
+            "desc": "",
+            "type": 42,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1568053965,
+            "built_in": true,
+            "fixed": false,
+            "options": null,
+            "stay_settings": {
+                "field_type": 12,
+                "field_uuid": "field005",
+                "field_option_uuid": "UtYauic5"
+            }
+        },
+        {
+            "uuid": "LNCtECAx",
+            "name": "多选",
+            "name_pinyin": "duo1xuan3",
+            "desc": "",
+            "type": 16,
+            "default_value": null,
+            "renderer": 1,
+            "filter_option": 0,
+            "search_option": 1,
+            "create_time": 1586580822,
+            "built_in": false,
+            "fixed": false,
+            "options": [
+                {
+                    "uuid": "M3DdwZCv",
+                    "value": "a",
+                    "selected": false,
+                    "background_color": "#307fe2",
+                    "color": "#fff",
+                    "desc": ""
+                },
+                {
+                    "uuid": "ExHdZYqu",
+                    "value": "b",
+                    "selected": false,
+                    "background_color": "#00b388",
+                    "color": "#fff",
+                    "desc": ""
+                },
+                {
+                    "uuid": "BvzpYtA1",
+                    "value": "ads",
+                    "selected": false,
+                    "background_color": "#f1b300",
+                    "color": "#fff",
+                    "desc": ""
+                },
+                {
+                    "uuid": "Vkqk768Z",
+                    "value": "gdg",
+                    "selected": false,
+                    "background_color": "#ff6a39",
+                    "color": "#fff",
+                    "desc": ""
+                }
+            ]
+        },
+        {
+            "uuid": "field004",
+            "name": "负责人",
+            "name_pinyin": "fu4ze2ren2",
+            "desc": "",
+            "type": 8,
+            "default_value": "6ZpgEzkk",
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1472687999999996,
+            "built_in": true,
+            "fixed": true,
+            "options": null
+        },
+        {
+            "uuid": "field010",
+            "name": "更新时间",
+            "name_pinyin": "geng4xin1shi2jian1",
+            "desc": "",
+            "type": 6,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1472687999999990,
+            "built_in": true,
+            "fixed": true,
+            "options": null
+        },
+        {
+            "uuid": "field026",
+            "name": "工时进度",
+            "name_pinyin": "gong1shi2jin4du4",
+            "desc": "",
+            "type": 4,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1472687999999980,
+            "built_in": true,
+            "fixed": true,
+            "options": null
+        },
+        {
+            "uuid": "field007",
+            "name": "工作项类型",
+            "name_pinyin": "gong1zuo4xiang4lei4xing2",
+            "desc": "",
+            "type": 11,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1472687999999993,
+            "built_in": true,
+            "fixed": true,
+            "options": null
+        },
+        {
+            "uuid": "5pFDgSVg",
+            "name": "挂起-停留次数",
+            "name_pinyin": "gua4qi3-ting2liu2ci4shu4",
+            "desc": "",
+            "type": 41,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1568053965,
+            "built_in": true,
+            "fixed": false,
+            "options": null,
+            "stay_settings": {
+                "field_type": 12,
+                "field_uuid": "field005",
+                "field_option_uuid": "2MRP1y8f"
+            }
+        },
+        {
+            "uuid": "8nWNJhfC",
+            "name": "挂起-停留时间",
+            "name_pinyin": "gua4qi3-ting2liu2shi2jian1",
+            "desc": "",
+            "type": 42,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1568053965,
+            "built_in": true,
+            "fixed": false,
+            "options": null,
+            "stay_settings": {
+                "field_type": 12,
+                "field_uuid": "field005",
+                "field_option_uuid": "2MRP1y8f"
+            }
+        },
+        {
+            "uuid": "5GPtpjvk",
+            "name": "关闭-停留次数",
+            "name_pinyin": "guan1bi4-ting2liu2ci4shu4",
+            "desc": "",
+            "type": 41,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1568053965,
+            "built_in": true,
+            "fixed": false,
+            "options": null,
+            "stay_settings": {
+                "field_type": 12,
+                "field_uuid": "field005",
+                "field_option_uuid": "TqN5SBfg"
+            }
+        },
+        {
+            "uuid": "4uxQSUYZ",
+            "name": "关闭-停留时间",
+            "name_pinyin": "guan1bi4-ting2liu2shi2jian1",
+            "desc": "",
+            "type": 42,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1568053965,
+            "built_in": true,
+            "fixed": false,
+            "options": null,
+            "stay_settings": {
+                "field_type": 12,
+                "field_uuid": "field005",
+                "field_option_uuid": "TqN5SBfg"
+            }
+        },
+        {
+            "uuid": "field008",
+            "name": "关注者",
+            "name_pinyin": "guan1zhu4zhe3",
+            "desc": "",
+            "type": 13,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1472687999999992,
+            "built_in": true,
+            "fixed": true,
+            "options": null
+        },
+        {
+            "uuid": "TFtxWUkm",
+            "name": "回归不通过-停留次数",
+            "name_pinyin": "hui2gui1bu4tong1guo4-ting2liu2ci4shu4",
+            "desc": "",
+            "type": 41,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1568053965,
+            "built_in": true,
+            "fixed": false,
+            "options": null,
+            "stay_settings": {
+                "field_type": 12,
+                "field_uuid": "field005",
+                "field_option_uuid": "JA6LYriw"
+            }
+        },
+        {
+            "uuid": "EEgNwKHL",
+            "name": "回归不通过-停留时间",
+            "name_pinyin": "hui2gui1bu4tong1guo4-ting2liu2shi2jian1",
+            "desc": "",
+            "type": 42,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1568053965,
+            "built_in": true,
+            "fixed": false,
+            "options": null,
+            "stay_settings": {
+                "field_type": 12,
+                "field_uuid": "field005",
+                "field_option_uuid": "JA6LYriw"
+            }
+        },
+        {
+            "uuid": "KEkALBcw",
+            "name": "回归通过-停留次数",
+            "name_pinyin": "hui2gui1tong1guo4-ting2liu2ci4shu4",
+            "desc": "",
+            "type": 41,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1568053965,
+            "built_in": true,
+            "fixed": false,
+            "options": null,
+            "stay_settings": {
+                "field_type": 12,
+                "field_uuid": "field005",
+                "field_option_uuid": "2YPKySwm"
+            }
+        },
+        {
+            "uuid": "QhweHB3u",
+            "name": "回归通过-停留时间",
+            "name_pinyin": "hui2gui1tong1guo4-ting2liu2shi2jian1",
+            "desc": "",
+            "type": 42,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1568053965,
+            "built_in": true,
+            "fixed": false,
+            "options": null,
+            "stay_settings": {
+                "field_type": 12,
+                "field_uuid": "field005",
+                "field_option_uuid": "2YPKySwm"
+            }
+        },
+        {
+            "uuid": "field015",
+            "name": "ID",
+            "name_pinyin": "ID",
+            "desc": "",
+            "type": 14,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1472687999999987,
+            "built_in": true,
+            "fixed": true,
+            "options": null
+        },
+        {
+            "uuid": "ExYvZqyN",
+            "name": "iOS系统版本",
+            "name_pinyin": "iOSxi4tong3ban3ben3",
+            "desc": "",
+            "type": 1,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1535539298,
+            "built_in": false,
+            "fixed": false,
+            "options": [
+                {
+                    "uuid": "5dddagtB",
+                    "value": "iOS 11",
+                    "selected": false,
+                    "background_color": "#307fe2",
+                    "color": "#fff",
+                    "desc": ""
+                },
+                {
+                    "uuid": "9WyjbU74",
+                    "value": "iOS 10",
+                    "selected": false,
+                    "background_color": "#00b388",
+                    "color": "#fff",
+                    "desc": ""
+                },
+                {
+                    "uuid": "PuZSXEKg",
+                    "value": "iOS 9",
+                    "selected": false,
+                    "background_color": "#f1b300",
+                    "color": "#fff",
+                    "desc": ""
+                },
+                {
+                    "uuid": "RkN5f93J",
+                    "value": "iOS 8",
+                    "selected": false,
+                    "background_color": "#ff6a39",
+                    "color": "#fff",
+                    "desc": ""
+                },
+                {
+                    "uuid": "EMjW6wB1",
+                    "value": "iOS 7",
+                    "selected": false,
+                    "background_color": "#e63422",
+                    "color": "#fff",
+                    "desc": ""
+                },
+                {
+                    "uuid": "AyQpmgR2",
+                    "value": "iOS 6",
+                    "selected": false,
+                    "background_color": "#aa8066",
+                    "color": "#fff",
+                    "desc": ""
+                },
+                {
+                    "uuid": "7XK19BgW",
+                    "value": "iOS 5",
+                    "selected": false,
+                    "background_color": "#9678d3",
+                    "color": "#fff",
+                    "desc": ""
+                },
+                {
+                    "uuid": "HjxZGFqa",
+                    "value": "iOS 4",
+                    "selected": false,
+                    "background_color": "#e0ecfb",
+                    "color": "#307fe2",
+                    "desc": ""
+                }
+            ]
+        },
+        {
+            "uuid": "field027",
+            "name": "计划开始日期",
+            "name_pinyin": "ji4hua4kai1shi3ri4qi1",
+            "desc": "",
+            "type": 5,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1472687999999977,
+            "built_in": true,
+            "fixed": true,
+            "options": null
+        },
+        {
+            "uuid": "field028",
+            "name": "计划完成日期",
+            "name_pinyin": "ji4hua4wan2cheng2ri4qi1",
+            "desc": "",
+            "type": 5,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1472687999999976,
+            "built_in": true,
+            "fixed": true,
+            "options": null
+        },
+        {
+            "uuid": "field013",
+            "name": "截止日期",
+            "name_pinyin": "jie2zhi3ri4qi1",
+            "desc": "",
+            "type": 5,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1472687999999988,
+            "built_in": true,
+            "fixed": true,
+            "options": null
+        },
+        {
+            "uuid": "field033",
+            "name": "进度",
+            "name_pinyin": "jin4du4",
+            "desc": "",
+            "type": 4,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1472687999999975,
+            "built_in": true,
+            "fixed": true,
+            "options": null
+        },
+        {
+            "uuid": "CszJoedq",
+            "name": "进行中-停留次数",
+            "name_pinyin": "jin4xing2zhong1-ting2liu2ci4shu4",
+            "desc": "",
+            "type": 41,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1568053965,
+            "built_in": true,
+            "fixed": false,
+            "options": null,
+            "stay_settings": {
+                "field_type": 12,
+                "field_uuid": "field005",
+                "field_option_uuid": "SriNNDVw"
+            }
+        },
+        {
+            "uuid": "Y9Nym1ch",
+            "name": "进行中-停留时间",
+            "name_pinyin": "jin4xing2zhong1-ting2liu2shi2jian1",
+            "desc": "",
+            "type": 42,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1568053965,
+            "built_in": true,
+            "fixed": false,
+            "options": null,
+            "stay_settings": {
+                "field_type": 12,
+                "field_uuid": "field005",
+                "field_option_uuid": "SriNNDVw"
+            }
+        },
+        {
+            "uuid": "6fsE4VeK",
+            "name": "浏览器",
+            "name_pinyin": "liu2lan3qi4",
+            "desc": "",
+            "type": 1,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1535539298,
+            "built_in": false,
+            "fixed": false,
+            "options": [
+                {
+                    "uuid": "TNfMZtbx",
+                    "value": "Chrome",
+                    "selected": false,
+                    "background_color": "#307fe2",
+                    "color": "#fff",
+                    "desc": ""
+                },
+                {
+                    "uuid": "85DCmNVw",
+                    "value": "Firefox",
+                    "selected": false,
+                    "background_color": "#00b388",
+                    "color": "#fff",
+                    "desc": ""
+                },
+                {
+                    "uuid": "4u1pnVqj",
+                    "value": "Opera",
+                    "selected": false,
+                    "background_color": "#f1b300",
+                    "color": "#fff",
+                    "desc": ""
+                },
+                {
+                    "uuid": "Rgm9aHzJ",
+                    "value": "Safari",
+                    "selected": false,
+                    "background_color": "#ff6a39",
+                    "color": "#fff",
+                    "desc": ""
+                },
+                {
+                    "uuid": "EdcsHtv4",
+                    "value": "Edge",
+                    "selected": false,
+                    "background_color": "#e63422",
+                    "color": "#fff",
+                    "desc": ""
+                },
+                {
+                    "uuid": "8S6P2aFQ",
+                    "value": "360浏览器",
+                    "selected": false,
+                    "background_color": "#aa8066",
+                    "color": "#fff",
+                    "desc": ""
+                },
+                {
+                    "uuid": "WjsonBaL",
+                    "value": "搜狗浏览器",
+                    "selected": false,
+                    "background_color": "#9678d3",
+                    "color": "#fff",
+                    "desc": ""
+                },
+                {
+                    "uuid": "P4ZT5K1g",
+                    "value": "Chromium",
+                    "selected": false,
+                    "background_color": "#e0ecfb",
+                    "color": "#307fe2",
+                    "desc": ""
+                },
+                {
+                    "uuid": "DnCE1Qu7",
+                    "value": "遨游浏览器",
+                    "selected": false,
+                    "background_color": "#d9f4ed",
+                    "color": "#00b388",
+                    "desc": ""
+                },
+                {
+                    "uuid": "VhKQ5kX4",
+                    "value": "QQ浏览器",
+                    "selected": false,
+                    "background_color": "#fdf4d9",
+                    "color": "#f1b300",
+                    "desc": ""
+                }
+            ]
+        },
+        {
+            "uuid": "field002",
+            "name": "描述",
+            "name_pinyin": "miao2shu4",
+            "desc": "",
+            "type": 2,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1472687999999998,
+            "built_in": true,
+            "fixed": true,
+            "options": null
+        },
+        {
+            "uuid": "field016",
+            "name": "描述",
+            "name_pinyin": "miao2shu4",
+            "desc": "",
+            "type": 2,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1472687999999986,
+            "built_in": true,
+            "fixed": true,
+            "options": null
+        },
+        {
+            "uuid": "7dzVRLFr",
+            "name": "my_task_field",
+            "name_pinyin": "my_task_field",
+            "desc": "",
+            "type": 2,
+            "default_value": null,
+            "renderer": 1,
+            "filter_option": 0,
+            "search_option": 1,
+            "create_time": 1586505797,
+            "built_in": false,
+            "fixed": false,
+            "options": null
+        },
+        {
+            "uuid": "Dzb5Ui8p",
+            "name": "评论处理方式",
+            "name_pinyin": "ping2lun4chu4li3fang1shi4",
+            "desc": "",
+            "type": 1,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1535539298,
+            "built_in": false,
+            "fixed": false,
+            "options": [
+                {
+                    "uuid": "3oia8tHq",
+                    "value": "转为需求",
+                    "selected": false,
+                    "background_color": "#307fe2",
+                    "color": "#fff",
+                    "desc": ""
+                },
+                {
+                    "uuid": "DzXfBBtt",
+                    "value": "不予接受",
+                    "selected": false,
+                    "background_color": "#00b388",
+                    "color": "#fff",
+                    "desc": ""
+                },
+                {
+                    "uuid": "HkZZdxSS",
+                    "value": "延后处理",
+                    "selected": false,
+                    "background_color": "#f1b300",
+                    "color": "#fff",
+                    "desc": ""
+                }
+            ]
+        },
+        {
+            "uuid": "12m8U5WB",
+            "name": "评论类型",
+            "name_pinyin": "ping2lun4lei4xing2",
+            "desc": "",
+            "type": 1,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1535539298,
+            "built_in": false,
+            "fixed": false,
+            "options": [
+                {
+                    "uuid": "Tsvq3ae7",
+                    "value": "优化建议",
+                    "selected": false,
+                    "background_color": "#307fe2",
+                    "color": "#fff",
+                    "desc": ""
+                },
+                {
+                    "uuid": "FGLuhjkk",
+                    "value": "产品 Bug",
+                    "selected": false,
+                    "background_color": "#00b388",
+                    "color": "#fff",
+                    "desc": ""
+                },
+                {
+                    "uuid": "HBkCKUpd",
+                    "value": "无意义评论",
+                    "selected": false,
+                    "background_color": "#f1b300",
+                    "color": "#fff",
+                    "desc": ""
+                }
+            ]
+        },
+        {
+            "uuid": "SRtvuBNo",
+            "name": "评论时间",
+            "name_pinyin": "ping2lun4shi2jian1",
+            "desc": "",
+            "type": 5,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1535539298,
+            "built_in": false,
+            "fixed": false,
+            "options": null
+        },
+        {
+            "uuid": "ULM9zY1r",
+            "name": "评论用户",
+            "name_pinyin": "ping2lun4yong4hu4",
+            "desc": "",
+            "type": 2,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1535539298,
+            "built_in": false,
+            "fixed": false,
+            "options": null
+        },
+        {
+            "uuid": "MZpCsyPG",
+            "name": "缺陷类型",
+            "name_pinyin": "que1xian4lei4xing2",
+            "desc": "",
+            "type": 1,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1535539298,
+            "built_in": false,
+            "fixed": false,
+            "options": [
+                {
+                    "uuid": "LS5w9vJy",
+                    "value": "功能问题",
+                    "selected": false,
+                    "background_color": "#307fe2",
+                    "color": "#fff",
+                    "desc": ""
+                },
+                {
+                    "uuid": "VsXcBJYo",
+                    "value": "性能问题",
+                    "selected": false,
+                    "background_color": "#00b388",
+                    "color": "#fff",
+                    "desc": ""
+                },
+                {
+                    "uuid": "YHNaTdXH",
+                    "value": "接口问题",
+                    "selected": false,
+                    "background_color": "#f1b300",
+                    "color": "#fff",
+                    "desc": ""
+                },
+                {
+                    "uuid": "X5Mp9rni",
+                    "value": "安全问题",
+                    "selected": false,
+                    "background_color": "#ff6a39",
+                    "color": "#fff",
+                    "desc": ""
+                },
+                {
+                    "uuid": "BfjnVeia",
+                    "value": "UI界面问题",
+                    "selected": false,
+                    "background_color": "#e63422",
+                    "color": "#fff",
+                    "desc": ""
+                },
+                {
+                    "uuid": "R6eE5KRU",
+                    "value": "易用性问题",
+                    "selected": false,
+                    "background_color": "#aa8066",
+                    "color": "#fff",
+                    "desc": ""
+                },
+                {
+                    "uuid": "AP41ZqAo",
+                    "value": "兼容性问题",
+                    "selected": false,
+                    "background_color": "#9678d3",
+                    "color": "#fff",
+                    "desc": ""
+                },
+                {
+                    "uuid": "TsiUXDNH",
+                    "value": "数据问题",
+                    "selected": false,
+                    "background_color": "#e0ecfb",
+                    "color": "#307fe2",
+                    "desc": ""
+                },
+                {
+                    "uuid": "fWFHrAdv",
+                    "value": "逻辑问题",
+                    "selected": false,
+                    "background_color": "#d9f4ed",
+                    "color": "#00b388",
+                    "desc": ""
+                },
+                {
+                    "uuid": "W1Byp9Hx",
+                    "value": "需求问题",
+                    "selected": false,
+                    "background_color": "#fdf4d9",
+                    "color": "#f1b300",
+                    "desc": ""
+                },
+                {
+                    "uuid": "DpdB1DTB",
+                    "value": "数据请求问题",
+                    "selected": false,
+                    "background_color": "#ffe9e2",
+                    "color": "#ff6a39",
+                    "desc": ""
+                },
+                {
+                    "uuid": "FSsDNmJB",
+                    "value": "成因相同",
+                    "selected": false,
+                    "background_color": "#fbe1de",
+                    "color": "#e63422",
+                    "desc": ""
+                }
+            ]
+        },
+        {
+            "uuid": "Kqc9WSC8",
+            "name": "设计中-停留次数",
+            "name_pinyin": "she4ji4zhong1-ting2liu2ci4shu4",
+            "desc": "",
+            "type": 41,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1568053965,
+            "built_in": true,
+            "fixed": false,
+            "options": null,
+            "stay_settings": {
+                "field_type": 12,
+                "field_uuid": "field005",
+                "field_option_uuid": "PKDd3Xf5"
+            }
+        },
+        {
+            "uuid": "2nyPDaJd",
+            "name": "设计中-停留时间",
+            "name_pinyin": "she4ji4zhong1-ting2liu2shi2jian1",
+            "desc": "",
+            "type": 42,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1568053965,
+            "built_in": true,
+            "fixed": false,
+            "options": null,
+            "stay_settings": {
+                "field_type": 12,
+                "field_uuid": "field005",
+                "field_option_uuid": "PKDd3Xf5"
+            }
+        },
+        {
+            "uuid": "field020",
+            "name": "剩余工时",
+            "name_pinyin": "sheng4yu2gong1shi2",
+            "desc": "",
+            "type": 4,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1472687999999983,
+            "built_in": true,
+            "fixed": true,
+            "options": null
+        },
+        {
+            "uuid": "field031",
+            "name": "是否线上缺陷",
+            "name_pinyin": "shi4fou3xian4shang4que1xian4",
+            "desc": "",
+            "type": 1,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1592882359,
+            "built_in": true,
+            "fixed": false,
+            "options": [
+                {
+                    "uuid": "WJpM4A3H",
+                    "value": "是",
+                    "selected": false,
+                    "background_color": "#307fe2",
+                    "color": "#fff",
+                    "desc": ""
+                },
+                {
+                    "uuid": "UNsQPvb7",
+                    "value": "否",
+                    "selected": false,
+                    "background_color": "#00b388",
+                    "color": "#fff",
+                    "desc": ""
+                }
+            ]
+        },
+        {
+            "uuid": "field029",
+            "name": "所属产品",
+            "name_pinyin": "suo3shu3chan3pin3",
+            "desc": "",
+            "type": 44,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1472687999999979,
+            "built_in": true,
+            "fixed": true,
+            "options": null
+        },
+        {
+            "uuid": "field011",
+            "name": "所属迭代",
+            "name_pinyin": "suo3shu3die2dai4",
+            "desc": "",
+            "type": 7,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1472687999999989,
+            "built_in": true,
+            "fixed": true,
+            "options": null
+        },
+        {
+            "uuid": "field030",
+            "name": "所属功能模块",
+            "name_pinyin": "suo3shu3gong1neng2mo2kuai4",
+            "desc": "",
+            "type": 46,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1472687999999978,
+            "built_in": true,
+            "fixed": true,
+            "options": null
+        },
+        {
+            "uuid": "field030",
+            "name": "所属功能模块",
+            "name_pinyin": "suo3shu3gong1neng2mo2kuai4",
+            "desc": "",
+            "type": 46,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1472687999999974,
+            "built_in": true,
+            "fixed": true,
+            "options": null
+        },
+        {
+            "uuid": "field006",
+            "name": "所属项目",
+            "name_pinyin": "suo3shu3xiang4mu4",
+            "desc": "",
+            "type": 9,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1472687999999994,
+            "built_in": true,
+            "fixed": true,
+            "options": null
+        },
+        {
+            "uuid": "Vub9BmUf",
+            "name": "test",
+            "name_pinyin": "test",
+            "desc": "",
+            "type": 2,
+            "default_value": null,
+            "renderer": 1,
+            "filter_option": 0,
+            "search_option": 1,
+            "create_time": 1538969695,
+            "built_in": false,
+            "fixed": false,
+            "options": null
+        },
+        {
+            "uuid": "DpZcyo5z",
+            "name": "提单版本",
+            "name_pinyin": "ti2dan1ban3ben3",
+            "desc": "",
+            "type": 7,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1535539298,
+            "built_in": false,
+            "fixed": false,
+            "options": null
+        },
+        {
+            "uuid": "spdCjLo2",
+            "name": "网络环境",
+            "name_pinyin": "wang3luo4huan2jing4",
+            "desc": "",
+            "type": 1,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1535539298,
+            "built_in": false,
+            "fixed": false,
+            "options": [
+                {
+                    "uuid": "Qyig2cw7",
+                    "value": "WiFi",
+                    "selected": false,
+                    "background_color": "#307fe2",
+                    "color": "#fff",
+                    "desc": ""
+                },
+                {
+                    "uuid": "2euKjueZ",
+                    "value": "4G",
+                    "selected": false,
+                    "background_color": "#00b388",
+                    "color": "#fff",
+                    "desc": ""
+                },
+                {
+                    "uuid": "6H7CTFrc",
+                    "value": "3G",
+                    "selected": false,
+                    "background_color": "#f1b300",
+                    "color": "#fff",
+                    "desc": ""
+                },
+                {
+                    "uuid": "SK39n6FF",
+                    "value": "离线",
+                    "selected": false,
+                    "background_color": "#ff6a39",
+                    "color": "#fff",
+                    "desc": ""
+                }
+            ]
+        },
+        {
+            "uuid": "YZQ35Z7Q",
+            "name": "未处理-停留次数",
+            "name_pinyin": "wei4chu4li3-ting2liu2ci4shu4",
+            "desc": "",
+            "type": 41,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1568053965,
+            "built_in": true,
+            "fixed": false,
+            "options": null,
+            "stay_settings": {
+                "field_type": 12,
+                "field_uuid": "field005",
+                "field_option_uuid": "5YdVJXXX"
+            }
+        },
+        {
+            "uuid": "MViayp1a",
+            "name": "未处理-停留时间",
+            "name_pinyin": "wei4chu4li3-ting2liu2shi2jian1",
+            "desc": "",
+            "type": 42,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1568053965,
+            "built_in": true,
+            "fixed": false,
+            "options": null,
+            "stay_settings": {
+                "field_type": 12,
+                "field_uuid": "field005",
+                "field_option_uuid": "5YdVJXXX"
+            }
+        },
+        {
+            "uuid": "BK9yMcym",
+            "name": "未激活-停留次数",
+            "name_pinyin": "wei4ji1huo2-ting2liu2ci4shu4",
+            "desc": "",
+            "type": 41,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1568053965,
+            "built_in": true,
+            "fixed": false,
+            "options": null,
+            "stay_settings": {
+                "field_type": 12,
+                "field_uuid": "field005",
+                "field_option_uuid": "Wuxv7mE7"
+            }
+        },
+        {
+            "uuid": "PSpcTCjD",
+            "name": "未激活-停留时间",
+            "name_pinyin": "wei4ji1huo2-ting2liu2shi2jian1",
+            "desc": "",
+            "type": 42,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1568053965,
+            "built_in": true,
+            "fixed": false,
+            "options": null,
+            "stay_settings": {
+                "field_type": 12,
+                "field_uuid": "field005",
+                "field_option_uuid": "Wuxv7mE7"
+            }
+        },
+        {
+            "uuid": "SGbrQ7xh",
+            "name": "未开始-停留次数",
+            "name_pinyin": "wei4kai1shi3-ting2liu2ci4shu4",
+            "desc": "",
+            "type": 41,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1568053965,
+            "built_in": true,
+            "fixed": false,
+            "options": null,
+            "stay_settings": {
+                "field_type": 12,
+                "field_uuid": "field005",
+                "field_option_uuid": "56VtNrD9"
+            }
+        },
+        {
+            "uuid": "LBKtREPN",
+            "name": "未开始-停留时间",
+            "name_pinyin": "wei4kai1shi3-ting2liu2shi2jian1",
+            "desc": "",
+            "type": 42,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1568053965,
+            "built_in": true,
+            "fixed": false,
+            "options": null,
+            "stay_settings": {
+                "field_type": 12,
+                "field_uuid": "field005",
+                "field_option_uuid": "56VtNrD9"
+            }
+        },
+        {
+            "uuid": "YGABuaJT",
+            "name": "问题单分析",
+            "name_pinyin": "wen4ti2dan1fen1xi1",
+            "desc": "",
+            "type": 1,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1535539298,
+            "built_in": false,
+            "fixed": false,
+            "options": [
+                {
+                    "uuid": "6Lc9RVNv",
+                    "value": "基本场景漏测",
+                    "selected": false,
+                    "background_color": "#307fe2",
+                    "color": "#fff",
+                    "desc": ""
+                },
+                {
+                    "uuid": "LFUR5jm9",
+                    "value": "特殊场景漏测",
+                    "selected": false,
+                    "background_color": "#00b388",
+                    "color": "#fff",
+                    "desc": ""
+                },
+                {
+                    "uuid": "GEhPW7g7",
+                    "value": "重复问题",
+                    "selected": false,
+                    "background_color": "#f1b300",
+                    "color": "#fff",
+                    "desc": ""
+                },
+                {
+                    "uuid": "TsxTwj8H",
+                    "value": "新需求引入",
+                    "selected": false,
+                    "background_color": "#ff6a39",
+                    "color": "#fff",
+                    "desc": ""
+                },
+                {
+                    "uuid": "WGHb8NgY",
+                    "value": "修改引入",
+                    "selected": false,
+                    "background_color": "#e63422",
+                    "color": "#fff",
+                    "desc": ""
+                },
+                {
+                    "uuid": "2NGFSwKk",
+                    "value": "接口变更",
+                    "selected": false,
+                    "background_color": "#aa8066",
+                    "color": "#fff",
+                    "desc": ""
+                },
+                {
+                    "uuid": "YNiTZtha",
+                    "value": "需求不明确",
+                    "selected": false,
+                    "background_color": "#9678d3",
+                    "color": "#fff",
+                    "desc": ""
+                },
+                {
+                    "uuid": "Xcxtm49H",
+                    "value": "转需求",
+                    "selected": false,
+                    "background_color": "#e0ecfb",
+                    "color": "#307fe2",
+                    "desc": ""
+                },
+                {
+                    "uuid": "CYJ8AfQE",
+                    "value": "易用性问题",
+                    "selected": false,
+                    "background_color": "#d9f4ed",
+                    "color": "#00b388",
+                    "desc": ""
+                },
+                {
+                    "uuid": "5LLjVX4P",
+                    "value": "非问题",
+                    "selected": false,
+                    "background_color": "#fdf4d9",
+                    "color": "#f1b300",
+                    "desc": ""
+                },
+                {
+                    "uuid": "EPwDfciR",
+                    "value": "不修复",
+                    "selected": false,
+                    "background_color": "#ffe9e2",
+                    "color": "#ff6a39",
+                    "desc": ""
+                },
+                {
+                    "uuid": "7TK3EboE",
+                    "value": "兼容性问题",
+                    "selected": false,
+                    "background_color": "#fbe1de",
+                    "color": "#e63422",
+                    "desc": ""
+                },
+                {
+                    "uuid": "K4oh7rfT",
+                    "value": "接口文档问题",
+                    "selected": false,
+                    "background_color": "#f2ece8",
+                    "color": "#aa8066",
+                    "desc": ""
+                }
+            ]
+        },
+        {
+            "uuid": "V8qeeDp6",
+            "name": "獬獭狝獯狞獱獳獴獶獹獽獾獿猡玁玂",
+            "name_pinyin": "xie4ta3xian3xun1ning2bian1nou4meng3nao3lu2rang2huan1nao3luo2xian3qi2",
+            "desc": "",
+            "type": 2,
+            "default_value": null,
+            "renderer": 1,
+            "filter_option": 0,
+            "search_option": 1,
+            "create_time": 1584674511,
+            "built_in": false,
+            "fixed": false,
+            "options": null
+        },
+        {
+            "uuid": "VJdLqBPU",
+            "name": "修复中-停留次数",
+            "name_pinyin": "xiu1fu4zhong1-ting2liu2ci4shu4",
+            "desc": "",
+            "type": 41,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1568053965,
+            "built_in": true,
+            "fixed": false,
+            "options": null,
+            "stay_settings": {
+                "field_type": 12,
+                "field_uuid": "field005",
+                "field_option_uuid": "AyfxuUxp"
+            }
+        },
+        {
+            "uuid": "4KmWd2aE",
+            "name": "修复中-停留时间",
+            "name_pinyin": "xiu1fu4zhong1-ting2liu2shi2jian1",
+            "desc": "",
+            "type": 42,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1568053965,
+            "built_in": true,
+            "fixed": false,
+            "options": null,
+            "stay_settings": {
+                "field_type": 12,
+                "field_uuid": "field005",
+                "field_option_uuid": "AyfxuUxp"
+            }
+        },
+        {
+            "uuid": "7s8FZsw9",
+            "name": "需求来源",
+            "name_pinyin": "xu1qiu2lai2yuan2",
+            "desc": "",
+            "type": 1,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1535539298,
+            "built_in": false,
+            "fixed": false,
+            "options": [
+                {
+                    "uuid": "CowXfTny",
+                    "value": "客户",
+                    "selected": false,
+                    "background_color": "#307fe2",
+                    "color": "#fff",
+                    "desc": ""
+                },
+                {
+                    "uuid": "MfG5qy3V",
+                    "value": "用户",
+                    "selected": false,
+                    "background_color": "#00b388",
+                    "color": "#fff",
+                    "desc": ""
+                },
+                {
+                    "uuid": "6FHyghDb",
+                    "value": "产品经理",
+                    "selected": false,
+                    "background_color": "#f1b300",
+                    "color": "#fff",
+                    "desc": ""
+                },
+                {
+                    "uuid": "Hvsjd5SK",
+                    "value": "客服",
+                    "selected": false,
+                    "background_color": "#ff6a39",
+                    "color": "#fff",
+                    "desc": ""
+                },
+                {
+                    "uuid": "3itsipv8",
+                    "value": "运营",
+                    "selected": false,
+                    "background_color": "#e63422",
+                    "color": "#fff",
+                    "desc": ""
+                },
+                {
+                    "uuid": "EAy7qgyS",
+                    "value": "技术支持",
+                    "selected": false,
+                    "background_color": "#aa8066",
+                    "color": "#fff",
+                    "desc": ""
+                },
+                {
+                    "uuid": "94NvPSHw",
+                    "value": "合作伙伴",
+                    "selected": false,
+                    "background_color": "#9678d3",
+                    "color": "#fff",
+                    "desc": ""
+                },
+                {
+                    "uuid": "7FqRb26n",
+                    "value": "竞争对手",
+                    "selected": false,
+                    "background_color": "#e0ecfb",
+                    "color": "#307fe2",
+                    "desc": ""
+                },
+                {
+                    "uuid": "PF6Yfc7B",
+                    "value": "开发人员",
+                    "selected": false,
+                    "background_color": "#d9f4ed",
+                    "color": "#00b388",
+                    "desc": ""
+                },
+                {
+                    "uuid": "ULBUnnzo",
+                    "value": "测试人员",
+                    "selected": false,
+                    "background_color": "#fdf4d9",
+                    "color": "#f1b300",
+                    "desc": ""
+                },
+                {
+                    "uuid": "TY6NKN5T",
+                    "value": "BUG",
+                    "selected": false,
+                    "background_color": "#ffe9e2",
+                    "color": "#ff6a39",
+                    "desc": ""
+                },
+                {
+                    "uuid": "TwfDurT8",
+                    "value": "市场",
+                    "selected": false,
+                    "background_color": "#fbe1de",
+                    "color": "#e63422",
+                    "desc": ""
+                }
+            ]
+        },
+        {
+            "uuid": "TF2jygGP",
+            "name": "需求类型",
+            "name_pinyin": "xu1qiu2lei4xing2",
+            "desc": "",
+            "type": 1,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1535539298,
+            "built_in": false,
+            "fixed": false,
+            "options": [
+                {
+                    "uuid": "USKHo131",
+                    "value": "新功能",
+                    "selected": false,
+                    "background_color": "#307fe2",
+                    "color": "#fff",
+                    "desc": ""
+                },
+                {
+                    "uuid": "Ft4t3xVo",
+                    "value": "优化需求",
+                    "selected": false,
+                    "background_color": "#00b388",
+                    "color": "#fff",
+                    "desc": ""
+                },
+                {
+                    "uuid": "6feuqzbj",
+                    "value": "其他",
+                    "selected": false,
+                    "background_color": "#f1b300",
+                    "color": "#fff",
+                    "desc": ""
+                },
+                {
+                    "uuid": "4nLFPyMN",
+                    "value": "学习型",
+                    "selected": false,
+                    "background_color": "#ff6a39",
+                    "color": "#fff",
+                    "desc": ""
+                },
+                {
+                    "uuid": "4nLFPyMl",
+                    "value": "学习型q",
+                    "selected": false,
+                    "background_color": "#ff6a39",
+                    "color": "#fff",
+                    "desc": ""
+                }
+            ]
+        },
+        {
+            "uuid": "B1mCAvg4",
+            "name": "哑启啠啡唡衔啥啦啧啨啩啪啫啬啭啮",
+            "name_pinyin": "ya3qi3zhe2fei1liang3xian2sha4laze2ying1gua4pa1zhe3se4zhuan4nie4",
+            "desc": "",
+            "type": 2,
+            "default_value": null,
+            "renderer": 1,
+            "filter_option": 0,
+            "search_option": 1,
+            "create_time": 1584674375,
+            "built_in": false,
+            "fixed": false,
+            "options": null
+        },
+        {
+            "uuid": "FUj3jrn9",
+            "name": "研发中-停留次数",
+            "name_pinyin": "yan2fa1zhong1-ting2liu2ci4shu4",
+            "desc": "",
+            "type": 41,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1568053965,
+            "built_in": true,
+            "fixed": false,
+            "options": null,
+            "stay_settings": {
+                "field_type": 12,
+                "field_uuid": "field005",
+                "field_option_uuid": "N9prgzBi"
+            }
+        },
+        {
+            "uuid": "82Ei75dm",
+            "name": "研发中-停留时间",
+            "name_pinyin": "yan2fa1zhong1-ting2liu2shi2jian1",
+            "desc": "",
+            "type": 42,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1568053965,
+            "built_in": true,
+            "fixed": false,
+            "options": null,
+            "stay_settings": {
+                "field_type": 12,
+                "field_uuid": "field005",
+                "field_option_uuid": "N9prgzBi"
+            }
+        },
+        {
+            "uuid": "PMgYMuEY",
+            "name": "已处理-停留次数",
+            "name_pinyin": "yi3chu4li3-ting2liu2ci4shu4",
+            "desc": "",
+            "type": 41,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1568053965,
+            "built_in": true,
+            "fixed": false,
+            "options": null,
+            "stay_settings": {
+                "field_type": 12,
+                "field_uuid": "field005",
+                "field_option_uuid": "X4dYSLVt"
+            }
+        },
+        {
+            "uuid": "3wrjKtUi",
+            "name": "已处理-停留时间",
+            "name_pinyin": "yi3chu4li3-ting2liu2shi2jian1",
+            "desc": "",
+            "type": 42,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1568053965,
+            "built_in": true,
+            "fixed": false,
+            "options": null,
+            "stay_settings": {
+                "field_type": 12,
+                "field_uuid": "field005",
+                "field_option_uuid": "X4dYSLVt"
+            }
+        },
+        {
+            "uuid": "field019",
+            "name": "已登记工时",
+            "name_pinyin": "yi3deng1ji4gong1shi2",
+            "desc": "",
+            "type": 4,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1472687999999984,
+            "built_in": true,
+            "fixed": true,
+            "options": null
+        },
+        {
+            "uuid": "78LArBmH",
+            "name": "已发布-停留次数",
+            "name_pinyin": "yi3fa1bu4-ting2liu2ci4shu4",
+            "desc": "",
+            "type": 41,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1568053965,
+            "built_in": true,
+            "fixed": false,
+            "options": null,
+            "stay_settings": {
+                "field_type": 12,
+                "field_uuid": "field005",
+                "field_option_uuid": "NwnoD7cK"
+            }
+        },
+        {
+            "uuid": "JrizfXnN",
+            "name": "已发布-停留时间",
+            "name_pinyin": "yi3fa1bu4-ting2liu2shi2jian1",
+            "desc": "",
+            "type": 42,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1568053965,
+            "built_in": true,
+            "fixed": false,
+            "options": null,
+            "stay_settings": {
+                "field_type": 12,
+                "field_uuid": "field005",
+                "field_option_uuid": "NwnoD7cK"
+            }
+        },
+        {
+            "uuid": "YVps8ggo",
+            "name": "已关单-停留次数",
+            "name_pinyin": "yi3guan1dan1-ting2liu2ci4shu4",
+            "desc": "",
+            "type": 41,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1587995608,
+            "built_in": true,
+            "fixed": false,
+            "options": null,
+            "stay_settings": {
+                "field_type": 12,
+                "field_uuid": "field005",
+                "field_option_uuid": "F86DUDju"
+            }
+        },
+        {
+            "uuid": "F9bFPBZP",
+            "name": "已关单-停留时间",
+            "name_pinyin": "yi3guan1dan1-ting2liu2shi2jian1",
+            "desc": "",
+            "type": 42,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1587995608,
+            "built_in": true,
+            "fixed": false,
+            "options": null,
+            "stay_settings": {
+                "field_type": 12,
+                "field_uuid": "field005",
+                "field_option_uuid": "F86DUDju"
+            }
+        },
+        {
+            "uuid": "SjwqmoYb",
+            "name": "已计划-停留次数",
+            "name_pinyin": "yi3ji4hua4-ting2liu2ci4shu4",
+            "desc": "",
+            "type": 41,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1568053965,
+            "built_in": true,
+            "fixed": false,
+            "options": null,
+            "stay_settings": {
+                "field_type": 12,
+                "field_uuid": "field005",
+                "field_option_uuid": "FXapje9B"
+            }
+        },
+        {
+            "uuid": "F7cwCvDZ",
+            "name": "已计划-停留时间",
+            "name_pinyin": "yi3ji4hua4-ting2liu2shi2jian1",
+            "desc": "",
+            "type": 42,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1568053965,
+            "built_in": true,
+            "fixed": false,
+            "options": null,
+            "stay_settings": {
+                "field_type": 12,
+                "field_uuid": "field005",
+                "field_option_uuid": "FXapje9B"
+            }
+        },
+        {
+            "uuid": "8ELvhU5f",
+            "name": "已解决-停留次数",
+            "name_pinyin": "yi3jie3jue2-ting2liu2ci4shu4",
+            "desc": "",
+            "type": 41,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1587995608,
+            "built_in": true,
+            "fixed": false,
+            "options": null,
+            "stay_settings": {
+                "field_type": 12,
+                "field_uuid": "field005",
+                "field_option_uuid": "HNdq2uoE"
+            }
+        },
+        {
+            "uuid": "EQUijPEC",
+            "name": "已解决-停留时间",
+            "name_pinyin": "yi3jie3jue2-ting2liu2shi2jian1",
+            "desc": "",
+            "type": 42,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1587995608,
+            "built_in": true,
+            "fixed": false,
+            "options": null,
+            "stay_settings": {
+                "field_type": 12,
+                "field_uuid": "field005",
+                "field_option_uuid": "HNdq2uoE"
+            }
+        },
+        {
+            "uuid": "CmX4KArF",
+            "name": "已确认BUG-停留次数",
+            "name_pinyin": "yi3que4ren4BUG-ting2liu2ci4shu4",
+            "desc": "",
+            "type": 41,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1587351652,
+            "built_in": true,
+            "fixed": false,
+            "options": null,
+            "stay_settings": {
+                "field_type": 12,
+                "field_uuid": "field005",
+                "field_option_uuid": "8z5m5ifA"
+            }
+        },
+        {
+            "uuid": "NQa44wzi",
+            "name": "已确认BUG-停留时间",
+            "name_pinyin": "yi3que4ren4BUG-ting2liu2shi2jian1",
+            "desc": "",
+            "type": 42,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1587351652,
+            "built_in": true,
+            "fixed": false,
+            "options": null,
+            "stay_settings": {
+                "field_type": 12,
+                "field_uuid": "field005",
+                "field_option_uuid": "8z5m5ifA"
+            }
+        },
+        {
+            "uuid": "SHuxRoo9",
+            "name": "已确认-停留次数",
+            "name_pinyin": "yi3que4ren4-ting2liu2ci4shu4",
+            "desc": "",
+            "type": 41,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1568053965,
+            "built_in": true,
+            "fixed": false,
+            "options": null,
+            "stay_settings": {
+                "field_type": 12,
+                "field_uuid": "field005",
+                "field_option_uuid": "H4FqJJqb"
+            }
+        },
+        {
+            "uuid": "GJi5bxb5",
+            "name": "已确认-停留时间",
+            "name_pinyin": "yi3que4ren4-ting2liu2shi2jian1",
+            "desc": "",
+            "type": 42,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1568053965,
+            "built_in": true,
+            "fixed": false,
+            "options": null,
+            "stay_settings": {
+                "field_type": 12,
+                "field_uuid": "field005",
+                "field_option_uuid": "H4FqJJqb"
+            }
+        },
+        {
+            "uuid": "X7d7ZD6G",
+            "name": "已完成-停留次数",
+            "name_pinyin": "yi3wan2cheng2-ting2liu2ci4shu4",
+            "desc": "",
+            "type": 41,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1568053965,
+            "built_in": true,
+            "fixed": false,
+            "options": null,
+            "stay_settings": {
+                "field_type": 12,
+                "field_uuid": "field005",
+                "field_option_uuid": "Jp6L788D"
+            }
+        },
+        {
+            "uuid": "Gzsbn56M",
+            "name": "已完成-停留时间",
+            "name_pinyin": "yi3wan2cheng2-ting2liu2shi2jian1",
+            "desc": "",
+            "type": 42,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1568053965,
+            "built_in": true,
+            "fixed": false,
+            "options": null,
+            "stay_settings": {
+                "field_type": 12,
+                "field_uuid": "field005",
+                "field_option_uuid": "Jp6L788D"
+            }
+        },
+        {
+            "uuid": "MrZhXf1b",
+            "name": "应用ID",
+            "name_pinyin": "ying1yong4ID",
+            "desc": "",
+            "type": 2,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1535539298,
+            "built_in": false,
+            "fixed": false,
+            "options": null
+        },
+        {
+            "uuid": "9adWFLbA",
+            "name": "应用名",
+            "name_pinyin": "ying1yong4ming2",
+            "desc": "",
+            "type": 2,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1535539298,
+            "built_in": false,
+            "fixed": false,
+            "options": null
+        },
+        {
+            "uuid": "WZdDaffo",
+            "name": "应用评分",
+            "name_pinyin": "ying1yong4ping2fen1",
+            "desc": "",
+            "type": 1,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1535539298,
+            "built_in": false,
+            "fixed": false,
+            "options": [
+                {
+                    "uuid": "L5AS586H",
+                    "value": "1星",
+                    "selected": false,
+                    "background_color": "#307fe2",
+                    "color": "#fff",
+                    "desc": ""
+                },
+                {
+                    "uuid": "WCcjzNZq",
+                    "value": "2星",
+                    "selected": false,
+                    "background_color": "#00b388",
+                    "color": "#fff",
+                    "desc": ""
+                },
+                {
+                    "uuid": "WxVh1Kmd",
+                    "value": "3星",
+                    "selected": false,
+                    "background_color": "#f1b300",
+                    "color": "#fff",
+                    "desc": ""
+                },
+                {
+                    "uuid": "AuXbVe19",
+                    "value": "4星",
+                    "selected": false,
+                    "background_color": "#ff6a39",
+                    "color": "#fff",
+                    "desc": ""
+                },
+                {
+                    "uuid": "DYhj7psL",
+                    "value": "5星",
+                    "selected": false,
+                    "background_color": "#e63422",
+                    "color": "#fff",
+                    "desc": ""
+                }
+            ]
+        },
+        {
+            "uuid": "field012",
+            "name": "优先级",
+            "name_pinyin": "you1xian1ji2",
+            "desc": "",
+            "type": 1,
+            "default_value": "EDjvSU7Q",
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1535539298,
+            "built_in": true,
+            "fixed": false,
+            "options": [
+                {
+                    "uuid": "SyvYXmkE",
+                    "value": "最高",
+                    "selected": false,
+                    "background_color": "#e63422",
+                    "color": "#FFFFFF",
+                    "desc": "将会直接阻碍进程的问题。"
+                },
+                {
+                    "uuid": "EWrf118M",
+                    "value": "较高",
+                    "selected": false,
+                    "background_color": "#ffe9e2",
+                    "color": "#ff6a39",
+                    "desc": "可能会阻碍进程的严重问题。"
+                },
+                {
+                    "uuid": "EDjvSU7Q",
+                    "value": "普通",
+                    "selected": true,
+                    "background_color": "#e0ecfb",
+                    "color": "#307fe2",
+                    "desc": "有可能影响进程的潜在问题。"
+                },
+                {
+                    "uuid": "BYeB8nCn",
+                    "value": "较低",
+                    "selected": false,
+                    "background_color": "#d9f4ed",
+                    "color": "#00b388",
+                    "desc": "容易解决的小问题。"
+                },
+                {
+                    "uuid": "MgCLeFSs",
+                    "value": "最低",
+                    "selected": false,
+                    "background_color": "#EFEFEF",
+                    "color": "#909090",
+                    "desc": "对进展影响甚微，微不足道的问题。"
+                },
+                {
+                    "uuid": "Q97Rzb7N",
+                    "value": "xx",
+                    "selected": false,
+                    "background_color": "#fdf4d9",
+                    "color": "#f1b300",
+                    "desc": ""
+                }
+            ]
+        },
+        {
+            "uuid": "field018",
+            "name": "预估工时",
+            "name_pinyin": "yu4gu1gong1shi2",
+            "desc": "",
+            "type": 4,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1472687999999985,
+            "built_in": true,
+            "fixed": true,
+            "options": null
+        },
+        {
+            "uuid": "field032",
+            "name": "预估故事点",
+            "name_pinyin": "yu4gu1gu4shi4dian3",
+            "desc": "",
+            "type": 3,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1592882359,
+            "built_in": true,
+            "fixed": false,
+            "options": null
+        },
+        {
+            "uuid": "field025",
+            "name": "预估偏差",
+            "name_pinyin": "yu4gu1pian1cha4",
+            "desc": "",
+            "type": 4,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1472687999999981,
+            "built_in": true,
+            "fixed": true,
+            "options": null
+        },
+        {
+            "uuid": "RfB4HYNc",
+            "name": "嬽嬾嬿孀孁孂娘孄孅孆孇孆孈孉孊娈",
+            "name_pinyin": "yuan1lan3yan4shuang1ling2jiao3niang2lan3qian1ying1shuang1ying1hui4quan2mi3luan2",
+            "desc": "",
+            "type": 2,
+            "default_value": null,
+            "renderer": 1,
+            "filter_option": 0,
+            "search_option": 1,
+            "create_time": 1584674436,
+            "built_in": false,
+            "fixed": false,
+            "options": null
+        },
+        {
+            "uuid": "47ZdrJ8K",
+            "name": "重现概览",
+            "name_pinyin": "zhong4xian4gai4lan3",
+            "desc": "",
+            "type": 1,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1535539298,
+            "built_in": false,
+            "fixed": false,
+            "options": [
+                {
+                    "uuid": "T2jpxobV",
+                    "value": "必现",
+                    "selected": false,
+                    "background_color": "#307fe2",
+                    "color": "#fff",
+                    "desc": ""
+                },
+                {
+                    "uuid": "4w5swbYf",
+                    "value": "大概率",
+                    "selected": false,
+                    "background_color": "#00b388",
+                    "color": "#fff",
+                    "desc": ""
+                },
+                {
+                    "uuid": "3k1Pt7Sh",
+                    "value": "小概率",
+                    "selected": false,
+                    "background_color": "#f1b300",
+                    "color": "#fff",
+                    "desc": ""
+                },
+                {
+                    "uuid": "U21cjLCk",
+                    "value": "只出现一次",
+                    "selected": false,
+                    "background_color": "#ff6a39",
+                    "color": "#fff",
+                    "desc": ""
+                }
+            ]
+        },
+        {
+            "uuid": "field005",
+            "name": "状态",
+            "name_pinyin": "zhuang4tai4",
+            "desc": "",
+            "type": 12,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1472687999999995,
+            "built_in": true,
+            "fixed": true,
+            "options": null
+        },
+        {
+            "uuid": "field021",
+            "name": "子工作项类型",
+            "name_pinyin": "zigong1zuo4xiang4lei4xing2",
+            "desc": "",
+            "type": 11,
+            "default_value": null,
+            "renderer": 0,
+            "filter_option": 0,
+            "search_option": 0,
+            "create_time": 1472687999999982,
+            "built_in": true,
+            "fixed": true,
+            "options": null
+        }
+    ],
+    "server_update_stamp": 1593595441698896
+}

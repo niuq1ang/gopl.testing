@@ -1,0 +1,8 @@
+{
+    "api_base_url": "http://localhost:9001",
+    "bang_db_spec": "root:123456@tcp(127.0.0.1:3306)/bang?parseTime=true&loc=Asia%2FShanghai&charset=utf8mb4",
+    "notice_db_spec": "root:123456@tcp(127.0.0.1:3306)/ones_notice?parseTime=true&loc=Asia%2FShanghai&charset=utf8mb4",
+    "redis_addr": "localhost:6379",
+    "redis_password": "",
+    "redis_db": 0
+}

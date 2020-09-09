@@ -1,0 +1,523 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "/QylxNH7Diig3Vd1JfTRI2ioWgE=",
+			"origin": "github.com/kataras/iris/vendor/github.com/BurntSushi/toml",
+			"path": "github.com/BurntSushi/toml",
+			"revision": "9e17293e52cf42944f38013e0c782a5aa27697bc",
+			"revisionTime": "2019-04-08T04:02:15Z"
+		},
+		{
+			"checksumSHA1": "3eNly98V+kbC1OZnZTwImBtFeJE=",
+			"origin": "github.com/kataras/iris/vendor/github.com/Joker/jade",
+			"path": "github.com/Joker/jade",
+			"revision": "9e17293e52cf42944f38013e0c782a5aa27697bc",
+			"revisionTime": "2019-04-08T04:02:15Z"
+		},
+		{
+			"checksumSHA1": "gPowz5SHTxjYhSUi+vFq20ww4Zg=",
+			"origin": "github.com/bangwork/ones-ai-api-common/vendor/github.com/PuerkitoBio/goquery",
+			"path": "github.com/PuerkitoBio/goquery",
+			"revision": "1ade109a196f363baaa3970d821939db20c8c778",
+			"revisionTime": "2019-12-21T17:46:28Z"
+		},
+		{
+			"checksumSHA1": "v4bY5xtnrEDHDKOD1E3nhZyHkcU=",
+			"origin": "github.com/kataras/iris/vendor/github.com/Shopify/goreferrer",
+			"path": "github.com/Shopify/goreferrer",
+			"revision": "9e17293e52cf42944f38013e0c782a5aa27697bc",
+			"revisionTime": "2019-04-08T04:02:15Z"
+		},
+		{
+			"checksumSHA1": "2rWSos1D+xqNSGkvEMOG3pntod8=",
+			"origin": "github.com/bangwork/ones-ai-api-common/vendor/github.com/andybalholm/cascadia",
+			"path": "github.com/andybalholm/cascadia",
+			"revision": "1ade109a196f363baaa3970d821939db20c8c778",
+			"revisionTime": "2019-12-21T17:46:28Z"
+		},
+		{
+			"checksumSHA1": "VBJvl7hE2PhuuUgCz5CqEA9Xb1g=",
+			"origin": "github.com/kataras/iris/vendor/github.com/aymerick/raymond",
+			"path": "github.com/aymerick/raymond",
+			"revision": "9e17293e52cf42944f38013e0c782a5aa27697bc",
+			"revisionTime": "2019-04-08T04:02:15Z"
+		},
+		{
+			"checksumSHA1": "Rvn+RH9pwFno1w6W+mhWsj/PxlA=",
+			"origin": "github.com/kataras/iris/vendor/github.com/aymerick/raymond/ast",
+			"path": "github.com/aymerick/raymond/ast",
+			"revision": "9e17293e52cf42944f38013e0c782a5aa27697bc",
+			"revisionTime": "2019-04-08T04:02:15Z"
+		},
+		{
+			"checksumSHA1": "5SJwPK0MYtJt5YiE1BNc9Wl3+S0=",
+			"origin": "github.com/kataras/iris/vendor/github.com/aymerick/raymond/lexer",
+			"path": "github.com/aymerick/raymond/lexer",
+			"revision": "9e17293e52cf42944f38013e0c782a5aa27697bc",
+			"revisionTime": "2019-04-08T04:02:15Z"
+		},
+		{
+			"checksumSHA1": "TCu/8QBP8TApLjSt13a7Qjnyxrs=",
+			"origin": "github.com/kataras/iris/vendor/github.com/aymerick/raymond/parser",
+			"path": "github.com/aymerick/raymond/parser",
+			"revision": "9e17293e52cf42944f38013e0c782a5aa27697bc",
+			"revisionTime": "2019-04-08T04:02:15Z"
+		},
+		{
+			"checksumSHA1": "uIYTV0PtHhbIFwm22iSCfTjuGaE=",
+			"origin": "github.com/bangwork/ones-ai-api-common/vendor/github.com/bangwork/ones-ai-api-common/models/context",
+			"path": "github.com/bangwork/ones-ai-api-common/models/context",
+			"revision": "1ade109a196f363baaa3970d821939db20c8c778",
+			"revisionTime": "2019-12-21T17:46:28Z"
+		},
+		{
+			"checksumSHA1": "gFeFx5mo2H/ZxrOxOMnV6sd5nbs=",
+			"path": "github.com/bangwork/ones-ai-api-common/models/item",
+			"revision": "1ade109a196f363baaa3970d821939db20c8c778",
+			"revisionTime": "2019-12-21T17:46:28Z"
+		},
+		{
+			"checksumSHA1": "+EQQmga9yn9gKy+MvyKU5yDmjQI=",
+			"path": "github.com/bangwork/ones-ai-api-common/utils/errors",
+			"revision": "1ade109a196f363baaa3970d821939db20c8c778",
+			"revisionTime": "2019-12-21T17:46:28Z"
+		},
+		{
+			"checksumSHA1": "ZtOmYEVa8Mo54SRhMrqp+zryKxE=",
+			"origin": "github.com/bangwork/ones-ai-api-common/vendor/github.com/bangwork/ones-ai-api-common/utils/pinyin",
+			"path": "github.com/bangwork/ones-ai-api-common/utils/pinyin",
+			"revision": "1ade109a196f363baaa3970d821939db20c8c778",
+			"revisionTime": "2019-12-21T17:46:28Z"
+		},
+		{
+			"checksumSHA1": "T25UItI7bOSckW7FiKPy+CobusU=",
+			"origin": "github.com/bangwork/ones-ai-api-common/vendor/github.com/bangwork/ones-ai-api-common/utils/strings",
+			"path": "github.com/bangwork/ones-ai-api-common/utils/strings",
+			"revision": "1ade109a196f363baaa3970d821939db20c8c778",
+			"revisionTime": "2019-12-21T17:46:28Z"
+		},
+		{
+			"checksumSHA1": "OaqXKd9P0Knq/P4BQAzE+6p0VIM=",
+			"origin": "github.com/bangwork/ones-ai-api-common/vendor/github.com/bangwork/ones-ai-api-common/utils/uuid",
+			"path": "github.com/bangwork/ones-ai-api-common/utils/uuid",
+			"revision": "1ade109a196f363baaa3970d821939db20c8c778",
+			"revisionTime": "2019-12-21T17:46:28Z"
+		},
+		{
+			"checksumSHA1": "5GAzjPvQzOUJvMuEzCOYg4wLB3Q=",
+			"path": "github.com/cenkalti/backoff",
+			"revision": "1e4cf3da559842a91afcb6ea6141451e6c30c618",
+			"revisionTime": "2019-01-06T10:58:22Z"
+		},
+		{
+			"checksumSHA1": "uexCd9vEWeJgEXoeAjM7mLFZuIw=",
+			"origin": "github.com/kataras/iris/vendor/github.com/eknkc/amber",
+			"path": "github.com/eknkc/amber",
+			"revision": "9e17293e52cf42944f38013e0c782a5aa27697bc",
+			"revisionTime": "2019-04-08T04:02:15Z"
+		},
+		{
+			"checksumSHA1": "xN7neNcn7i1MDjmrQk/Wfav2RbM=",
+			"origin": "github.com/kataras/iris/vendor/github.com/eknkc/amber/parser",
+			"path": "github.com/eknkc/amber/parser",
+			"revision": "9e17293e52cf42944f38013e0c782a5aa27697bc",
+			"revisionTime": "2019-04-08T04:02:15Z"
+		},
+		{
+			"checksumSHA1": "vU+6UrdUGzE5cJfctQFqiCcZJCM=",
+			"origin": "github.com/kataras/iris/vendor/github.com/fatih/structs",
+			"path": "github.com/fatih/structs",
+			"revision": "9e17293e52cf42944f38013e0c782a5aa27697bc",
+			"revisionTime": "2019-04-08T04:02:15Z"
+		},
+		{
+			"checksumSHA1": "FHV7/x951FcJ3pihaHUCarkKbwM=",
+			"origin": "github.com/kataras/iris/vendor/github.com/flosch/pongo2",
+			"path": "github.com/flosch/pongo2",
+			"revision": "9e17293e52cf42944f38013e0c782a5aa27697bc",
+			"revisionTime": "2019-04-08T04:02:15Z"
+		},
+		{
+			"checksumSHA1": "wmiJbuFVCxg22zwXIeLsVCudyeY=",
+			"path": "github.com/go-sql-driver/mysql",
+			"revision": "c45f530f8e7fe40f4687eaa50d0c8c5f1b66f9e0",
+			"revisionTime": "2018-12-18T12:36:37Z"
+		},
+		{
+			"checksumSHA1": "u9z5yPTvjsw9JKCs1xQNhwsO5Fo=",
+			"origin": "github.com/kataras/iris/vendor/github.com/iris-contrib/blackfriday",
+			"path": "github.com/iris-contrib/blackfriday",
+			"revision": "9e17293e52cf42944f38013e0c782a5aa27697bc",
+			"revisionTime": "2019-04-08T04:02:15Z"
+		},
+		{
+			"checksumSHA1": "OkaPVlApINSeBGNYr/kCmotCb6Y=",
+			"origin": "github.com/kataras/iris/vendor/github.com/iris-contrib/formBinder",
+			"path": "github.com/iris-contrib/formBinder",
+			"revision": "9e17293e52cf42944f38013e0c782a5aa27697bc",
+			"revisionTime": "2019-04-08T04:02:15Z"
+		},
+		{
+			"checksumSHA1": "ERbMoXgQbtXljNjPl00Se+3sA8U=",
+			"origin": "github.com/kataras/iris/vendor/github.com/iris-contrib/go.uuid",
+			"path": "github.com/iris-contrib/go.uuid",
+			"revision": "9e17293e52cf42944f38013e0c782a5aa27697bc",
+			"revisionTime": "2019-04-08T04:02:15Z"
+		},
+		{
+			"checksumSHA1": "z0ia3+qhhzY09EH0UEgaRd0Bo0U=",
+			"origin": "github.com/kataras/iris/vendor/github.com/json-iterator/go",
+			"path": "github.com/json-iterator/go",
+			"revision": "9e17293e52cf42944f38013e0c782a5aa27697bc",
+			"revisionTime": "2019-04-08T04:02:15Z"
+		},
+		{
+			"checksumSHA1": "KIX/3RadQkfl4ZxCmOQ01vAGLEI=",
+			"origin": "github.com/bangwork/ones-ai-api-common/vendor/github.com/juju/errors",
+			"path": "github.com/juju/errors",
+			"revision": "1ade109a196f363baaa3970d821939db20c8c778",
+			"revisionTime": "2019-12-21T17:46:28Z"
+		},
+		{
+			"checksumSHA1": "48d4zctJX0oOZJXR06WcEke8kOs=",
+			"path": "github.com/kataras/golog",
+			"revision": "03be101463868edc5a81f094fc68a5f6c1b5503a",
+			"revisionTime": "2018-03-21T17:39:39Z"
+		},
+		{
+			"checksumSHA1": "gHpF5vSMtLs6GGHzUWSLpYjrP9I=",
+			"path": "github.com/kataras/iris",
+			"revision": "9e17293e52cf42944f38013e0c782a5aa27697bc",
+			"revisionTime": "2019-04-08T04:02:15Z"
+		},
+		{
+			"checksumSHA1": "5tCA81I2EFEypBjsmpqBnj6KG1Q=",
+			"path": "github.com/kataras/iris/cache",
+			"revision": "9e17293e52cf42944f38013e0c782a5aa27697bc",
+			"revisionTime": "2019-04-08T04:02:15Z"
+		},
+		{
+			"checksumSHA1": "BH0XOfm0KygteYUwvx5p4njmAeM=",
+			"path": "github.com/kataras/iris/cache/cfg",
+			"revision": "9e17293e52cf42944f38013e0c782a5aa27697bc",
+			"revisionTime": "2019-04-08T04:02:15Z"
+		},
+		{
+			"checksumSHA1": "/1ydT9xGJFrwfDEqyxLMGk6wUQM=",
+			"path": "github.com/kataras/iris/cache/client",
+			"revision": "9e17293e52cf42944f38013e0c782a5aa27697bc",
+			"revisionTime": "2019-04-08T04:02:15Z"
+		},
+		{
+			"checksumSHA1": "u4cMZVZ8D6oIXdxVl9MdDEPTakU=",
+			"path": "github.com/kataras/iris/cache/client/rule",
+			"revision": "9e17293e52cf42944f38013e0c782a5aa27697bc",
+			"revisionTime": "2019-04-08T04:02:15Z"
+		},
+		{
+			"checksumSHA1": "QhAOY/b1Rdz8HD+LjY4O4lj43Pc=",
+			"path": "github.com/kataras/iris/cache/entry",
+			"revision": "9e17293e52cf42944f38013e0c782a5aa27697bc",
+			"revisionTime": "2019-04-08T04:02:15Z"
+		},
+		{
+			"checksumSHA1": "F8NTLWVki1Fbz8eNUQCbh8Ubkc4=",
+			"path": "github.com/kataras/iris/cache/ruleset",
+			"revision": "9e17293e52cf42944f38013e0c782a5aa27697bc",
+			"revisionTime": "2019-04-08T04:02:15Z"
+		},
+		{
+			"checksumSHA1": "ywTteO5SfE3qt0PcHe5w67U3Ctc=",
+			"path": "github.com/kataras/iris/cache/uri",
+			"revision": "9e17293e52cf42944f38013e0c782a5aa27697bc",
+			"revisionTime": "2019-04-08T04:02:15Z"
+		},
+		{
+			"checksumSHA1": "6PkU7L79rWuEZdymZEaM83ebhL4=",
+			"path": "github.com/kataras/iris/context",
+			"revision": "9e17293e52cf42944f38013e0c782a5aa27697bc",
+			"revisionTime": "2019-04-08T04:02:15Z"
+		},
+		{
+			"checksumSHA1": "Z5bTUcLPpxJB2WrYpCs0oYs7IbQ=",
+			"path": "github.com/kataras/iris/core/errors",
+			"revision": "9e17293e52cf42944f38013e0c782a5aa27697bc",
+			"revisionTime": "2019-04-08T04:02:15Z"
+		},
+		{
+			"checksumSHA1": "uiSTUHKA/ylA8QpAA5Ou88xLp6o=",
+			"path": "github.com/kataras/iris/core/handlerconv",
+			"revision": "9e17293e52cf42944f38013e0c782a5aa27697bc",
+			"revisionTime": "2019-04-08T04:02:15Z"
+		},
+		{
+			"checksumSHA1": "EJ3EHe4YSQagL+kmIUncvEv4X18=",
+			"path": "github.com/kataras/iris/core/host",
+			"revision": "9e17293e52cf42944f38013e0c782a5aa27697bc",
+			"revisionTime": "2019-04-08T04:02:15Z"
+		},
+		{
+			"checksumSHA1": "89OvszWQMKIlfW198OZlWYVrG2Y=",
+			"path": "github.com/kataras/iris/core/memstore",
+			"revision": "9e17293e52cf42944f38013e0c782a5aa27697bc",
+			"revisionTime": "2019-04-08T04:02:15Z"
+		},
+		{
+			"checksumSHA1": "MfOnpRo/Vu2OAhgYawKADhpIGzg=",
+			"path": "github.com/kataras/iris/core/netutil",
+			"revision": "9e17293e52cf42944f38013e0c782a5aa27697bc",
+			"revisionTime": "2019-04-08T04:02:15Z"
+		},
+		{
+			"checksumSHA1": "EyDuNkPgl5R6DshNHd3915HOWlk=",
+			"path": "github.com/kataras/iris/core/router",
+			"revision": "9e17293e52cf42944f38013e0c782a5aa27697bc",
+			"revisionTime": "2019-04-08T04:02:15Z"
+		},
+		{
+			"checksumSHA1": "J2Kbu2FxJ2sEtYI5j2KB0SK+O1s=",
+			"path": "github.com/kataras/iris/macro",
+			"revision": "9e17293e52cf42944f38013e0c782a5aa27697bc",
+			"revisionTime": "2019-04-08T04:02:15Z"
+		},
+		{
+			"checksumSHA1": "wsjVQRIe/D6ntBvS+wUFfJlwg2U=",
+			"path": "github.com/kataras/iris/macro/handler",
+			"revision": "9e17293e52cf42944f38013e0c782a5aa27697bc",
+			"revisionTime": "2019-04-08T04:02:15Z"
+		},
+		{
+			"checksumSHA1": "anj2eKZ2CX581JwTjin770YjiEk=",
+			"path": "github.com/kataras/iris/macro/interpreter/ast",
+			"revision": "9e17293e52cf42944f38013e0c782a5aa27697bc",
+			"revisionTime": "2019-04-08T04:02:15Z"
+		},
+		{
+			"checksumSHA1": "RyYhQsE4uaM9VdIKhqO5NY+AtKk=",
+			"path": "github.com/kataras/iris/macro/interpreter/lexer",
+			"revision": "9e17293e52cf42944f38013e0c782a5aa27697bc",
+			"revisionTime": "2019-04-08T04:02:15Z"
+		},
+		{
+			"checksumSHA1": "fwNvmKagCjWSoYOiXzCq+EQqNjg=",
+			"path": "github.com/kataras/iris/macro/interpreter/parser",
+			"revision": "9e17293e52cf42944f38013e0c782a5aa27697bc",
+			"revisionTime": "2019-04-08T04:02:15Z"
+		},
+		{
+			"checksumSHA1": "RSe/G25UcZdKqGCALWkQo07cgqA=",
+			"path": "github.com/kataras/iris/macro/interpreter/token",
+			"revision": "9e17293e52cf42944f38013e0c782a5aa27697bc",
+			"revisionTime": "2019-04-08T04:02:15Z"
+		},
+		{
+			"checksumSHA1": "PoyDFzpEAF+E2iIiLMYSVjmJRoM=",
+			"path": "github.com/kataras/iris/middleware/logger",
+			"revision": "9e17293e52cf42944f38013e0c782a5aa27697bc",
+			"revisionTime": "2019-04-08T04:02:15Z"
+		},
+		{
+			"checksumSHA1": "vBfPdkqynL48eBsAVe9YlqmM1v4=",
+			"path": "github.com/kataras/iris/middleware/recover",
+			"revision": "9e17293e52cf42944f38013e0c782a5aa27697bc",
+			"revisionTime": "2019-04-08T04:02:15Z"
+		},
+		{
+			"checksumSHA1": "/BJSdsMypUrX7dvReWwMqw46a0E=",
+			"path": "github.com/kataras/iris/view",
+			"revision": "9e17293e52cf42944f38013e0c782a5aa27697bc",
+			"revisionTime": "2019-04-08T04:02:15Z"
+		},
+		{
+			"checksumSHA1": "HoybcZiaam7j92RZuBC5VhqP43Y=",
+			"path": "github.com/kataras/pio",
+			"revision": "ea782b38602d1e5df3c2b891978a1f80d917a6bd",
+			"revisionTime": "2019-01-03T10:54:42Z"
+		},
+		{
+			"checksumSHA1": "NGwhNvcD+E+P1aaWxLwjeGjuMZ4=",
+			"path": "github.com/kataras/pio/terminal",
+			"revision": "ea782b38602d1e5df3c2b891978a1f80d917a6bd",
+			"revisionTime": "2019-01-03T10:54:42Z"
+		},
+		{
+			"checksumSHA1": "gPRajLnUQu9IiJkfvom+3gqiLpM=",
+			"origin": "github.com/kataras/iris/vendor/github.com/klauspost/compress/flate",
+			"path": "github.com/klauspost/compress/flate",
+			"revision": "9e17293e52cf42944f38013e0c782a5aa27697bc",
+			"revisionTime": "2019-04-08T04:02:15Z"
+		},
+		{
+			"checksumSHA1": "V1lQwkoDR1fPmZBSgkmZjgZofeU=",
+			"origin": "github.com/kataras/iris/vendor/github.com/klauspost/compress/gzip",
+			"path": "github.com/klauspost/compress/gzip",
+			"revision": "9e17293e52cf42944f38013e0c782a5aa27697bc",
+			"revisionTime": "2019-04-08T04:02:15Z"
+		},
+		{
+			"checksumSHA1": "rZxik/yTPboAr9Hd6K2cIv/5zFk=",
+			"origin": "github.com/kataras/iris/vendor/github.com/klauspost/cpuid",
+			"path": "github.com/klauspost/cpuid",
+			"revision": "9e17293e52cf42944f38013e0c782a5aa27697bc",
+			"revisionTime": "2019-04-08T04:02:15Z"
+		},
+		{
+			"checksumSHA1": "qaVT516+RuyIuEiEomK0syWgyVs=",
+			"origin": "github.com/kataras/iris/vendor/github.com/klauspost/crc32",
+			"path": "github.com/klauspost/crc32",
+			"revision": "9e17293e52cf42944f38013e0c782a5aa27697bc",
+			"revisionTime": "2019-04-08T04:02:15Z"
+		},
+		{
+			"checksumSHA1": "6BL2/fAwEe1Uf7kyTKomZn+EWoY=",
+			"origin": "github.com/kataras/iris/vendor/github.com/microcosm-cc/bluemonday",
+			"path": "github.com/microcosm-cc/bluemonday",
+			"revision": "9e17293e52cf42944f38013e0c782a5aa27697bc",
+			"revisionTime": "2019-04-08T04:02:15Z"
+		},
+		{
+			"checksumSHA1": "40FtHzM/ZZIVbfaNje68df3opTk=",
+			"origin": "github.com/bangwork/ones-ai-api-common/vendor/github.com/mozillazg/go-pinyin",
+			"path": "github.com/mozillazg/go-pinyin",
+			"revision": "1ade109a196f363baaa3970d821939db20c8c778",
+			"revisionTime": "2019-12-21T17:46:28Z"
+		},
+		{
+			"checksumSHA1": "WcUexGYJtX6yKdwVEAhJFVezuY4=",
+			"path": "github.com/ngaut/log",
+			"revision": "b8e36e7ba5ac61ce5644e570f1cc42d97dbaf8ed",
+			"revisionTime": "2018-03-14T03:18:56Z"
+		},
+		{
+			"checksumSHA1": "eXQcNh7uFr8/oEmLTY/wKvQ0M8k=",
+			"origin": "github.com/kataras/iris/middleware/logger/vendor/github.com/ryanuber/columnize",
+			"path": "github.com/ryanuber/columnize",
+			"revision": "9e17293e52cf42944f38013e0c782a5aa27697bc",
+			"revisionTime": "2019-04-08T04:02:15Z"
+		},
+		{
+			"checksumSHA1": "AkNEbYmPlGnU8Dr83Yyc8/sbEek=",
+			"origin": "github.com/kataras/iris/vendor/github.com/shurcooL/sanitized_anchor_name",
+			"path": "github.com/shurcooL/sanitized_anchor_name",
+			"revision": "9e17293e52cf42944f38013e0c782a5aa27697bc",
+			"revisionTime": "2019-04-08T04:02:15Z"
+		},
+		{
+			"checksumSHA1": "CSMVjFF7FnylAUUKW1e/4r+VFXA=",
+			"origin": "github.com/kataras/iris/vendor/golang.org/x/crypto/acme",
+			"path": "golang.org/x/crypto/acme",
+			"revision": "9e17293e52cf42944f38013e0c782a5aa27697bc",
+			"revisionTime": "2019-04-08T04:02:15Z"
+		},
+		{
+			"checksumSHA1": "lBWiVnI+9tnYWuXnUiWljDy9dnc=",
+			"origin": "github.com/kataras/iris/vendor/golang.org/x/crypto/acme/autocert",
+			"path": "golang.org/x/crypto/acme/autocert",
+			"revision": "9e17293e52cf42944f38013e0c782a5aa27697bc",
+			"revisionTime": "2019-04-08T04:02:15Z"
+		},
+		{
+			"checksumSHA1": "vqc3a+oTUGX8PmD0TS+qQ7gmN8I=",
+			"origin": "github.com/bangwork/ones-ai-api-common/vendor/golang.org/x/net/html",
+			"path": "golang.org/x/net/html",
+			"revision": "1ade109a196f363baaa3970d821939db20c8c778",
+			"revisionTime": "2019-12-21T17:46:28Z"
+		},
+		{
+			"checksumSHA1": "z79z5msRzgU48FCZxSuxfU8b4rs=",
+			"origin": "github.com/bangwork/ones-ai-api-common/vendor/golang.org/x/net/html/atom",
+			"path": "golang.org/x/net/html/atom",
+			"revision": "1ade109a196f363baaa3970d821939db20c8c778",
+			"revisionTime": "2019-12-21T17:46:28Z"
+		},
+		{
+			"checksumSHA1": "3W5wJirvxiLtgkx6/AaM4wNcW0I=",
+			"origin": "github.com/kataras/iris/vendor/golang.org/x/net/publicsuffix",
+			"path": "golang.org/x/net/publicsuffix",
+			"revision": "9e17293e52cf42944f38013e0c782a5aa27697bc",
+			"revisionTime": "2019-04-08T04:02:15Z"
+		},
+		{
+			"checksumSHA1": "wrTI2c9HtRzHGl74x7IJA8th/xI=",
+			"path": "golang.org/x/sys/unix",
+			"revision": "cb59ee3660675d463e86971646692ea3e470021c",
+			"revisionTime": "2019-01-06T04:23:00Z"
+		},
+		{
+			"checksumSHA1": "8ea1h1pimPfXc6cE5l3SQTe7SVo=",
+			"path": "golang.org/x/text/internal/language",
+			"revision": "31e7599a6c37728c25ca34167be099d072ad335d",
+			"revisionTime": "2019-04-05T05:38:27Z"
+		},
+		{
+			"checksumSHA1": "GxBlFOqWoIsWCMswUHh6dUqM5no=",
+			"path": "golang.org/x/text/internal/language/compact",
+			"revision": "31e7599a6c37728c25ca34167be099d072ad335d",
+			"revisionTime": "2019-04-05T05:38:27Z"
+		},
+		{
+			"checksumSHA1": "hyNCcTwMQnV6/MK8uUW9E5H0J0M=",
+			"path": "golang.org/x/text/internal/tag",
+			"revision": "31e7599a6c37728c25ca34167be099d072ad335d",
+			"revisionTime": "2019-04-05T05:38:27Z"
+		},
+		{
+			"checksumSHA1": "kgODOZdRLWKSppiHzrqOKdtrGHA=",
+			"path": "golang.org/x/text/language",
+			"revision": "31e7599a6c37728c25ca34167be099d072ad335d",
+			"revisionTime": "2019-04-05T05:38:27Z"
+		},
+		{
+			"checksumSHA1": "0vRxoJBB9TdAb/qp9kM9+wKQwcQ=",
+			"path": "gopkg.in/gorp.v1",
+			"revision": "6a667da9c028871f98598d85413e3fc4c6daa52e",
+			"revisionTime": "2018-08-14T16:43:10Z"
+		},
+		{
+			"checksumSHA1": "OU/wHTJqhyQfyRnXMVWx1Ox06kQ=",
+			"path": "gopkg.in/redis.v5",
+			"revision": "a16aeec10ff407b1e7be6dd35797ccf5426ef0f0",
+			"revisionTime": "2017-03-04T11:38:25Z"
+		},
+		{
+			"checksumSHA1": "efyYmNqK7vcPhXW4KXfwbdA1wr4=",
+			"path": "gopkg.in/redis.v5/internal",
+			"revision": "a16aeec10ff407b1e7be6dd35797ccf5426ef0f0",
+			"revisionTime": "2017-03-04T11:38:25Z"
+		},
+		{
+			"checksumSHA1": "2Ek4SixeRSKOX3mUiBMs3Aw+Guc=",
+			"path": "gopkg.in/redis.v5/internal/consistenthash",
+			"revision": "a16aeec10ff407b1e7be6dd35797ccf5426ef0f0",
+			"revisionTime": "2017-03-04T11:38:25Z"
+		},
+		{
+			"checksumSHA1": "rJYVKcBrwYUGl7nuuusmZGrt8mY=",
+			"path": "gopkg.in/redis.v5/internal/hashtag",
+			"revision": "a16aeec10ff407b1e7be6dd35797ccf5426ef0f0",
+			"revisionTime": "2017-03-04T11:38:25Z"
+		},
+		{
+			"checksumSHA1": "zsH5BF9qc31R7eEEVYLsjbIigDQ=",
+			"path": "gopkg.in/redis.v5/internal/pool",
+			"revision": "a16aeec10ff407b1e7be6dd35797ccf5426ef0f0",
+			"revisionTime": "2017-03-04T11:38:25Z"
+		},
+		{
+			"checksumSHA1": "EqPdu5g8NhzxQOMCvzbreTQlzVE=",
+			"path": "gopkg.in/redis.v5/internal/proto",
+			"revision": "a16aeec10ff407b1e7be6dd35797ccf5426ef0f0",
+			"revisionTime": "2017-03-04T11:38:25Z"
+		},
+		{
+			"checksumSHA1": "7VYQdUw19TAjD8t9e5YU524k3zE=",
+			"origin": "github.com/kataras/iris/vendor/gopkg.in/yaml.v2",
+			"path": "gopkg.in/yaml.v2",
+			"revision": "9e17293e52cf42944f38013e0c782a5aa27697bc",
+			"revisionTime": "2019-04-08T04:02:15Z"
+		}
+	],
+	"rootPath": "github.com/bangwork/ones-plugin/notice_platform"
+}

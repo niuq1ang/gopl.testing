@@ -1,0 +1,8 @@
+{
+    "private_db_user":"root",
+    "private_db_password":"123456",
+    "private_db_name":"privatedata",
+    "private_db_ip":"127.0.0.1:3306",
+
+    "nginx_log_path":"/Users/niuqiang/go_home/ones_team_usage.log"
+}

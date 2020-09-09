@@ -1,0 +1,5 @@
+{
+    "project_db_spec":"root:123456@tcp(127.0.0.1:3306)/project?parseTime=true&loc=Asia%2FShanghai&charset=utf8mb4",
+    "wiki_db_spec":"root:123456@tcp(127.0.0.1:3306)/wiki?parseTime=true&loc=Asia%2FShanghai&charset=utf8mb4"
+
+}

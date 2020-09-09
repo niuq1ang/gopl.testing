@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ONES 企业级研发管理解决方案</title>
+    <link rel="stylesheet" type="text/css" href="css/style-c0a468a3ca.css" media="all">
+    <link rel="stylesheet" type="text/css" href="css/mobile-7b61bb598e.css" media="screen and (max-width:800px)">
+    <link rel="stylesheet" type="text/css" href="css/pc-ff2c0eaac6.css" media="screen and (min-width:800px)">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <!--[if lte IE 8]>
+        <script>
+            location.href = "https://ones.ai/project/unsupport.html"
+        </script>
+        <link  rel="stylesheet" type="text/css" href="css/ie8-f2dacbe43f.css">
+    <![endif]-->
+    <!--[if IE 9]>
+        <link  rel="stylesheet" type="text/css" href="css/ie9-0c4fe709bd.css">
+    <![endif]-->
+    <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+    <link rel="icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+    <meta name="keywords" content="ones,万事,研发项目管理,项目管理软件,缺陷管理,知识库,知识管理,敏捷开发,devops,JIRA,Redmine">
+    <meta name="description" content="ONES 是整合敏捷开发和 DevOps 的研发管理解决方案。结合先进的管理思想，ONES 助力企业员工以创新的方式进行协作，提高工程质量，实现快速迭代。">
+    <script type="text/javascript" async="" src="https://widget.intercom.io/widget/spkug8a4"></script>
+    <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+    <script type="text/javascript" async="" src="//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js"></script>
+    <script src="https://hm.baidu.com/hm.js?74b5f61e31435aedafb0ca993b7ffa9e"></script>
+    <script async="" src="js/jsLib/sensorsdata.min.js"></script>
+    <script type="text/javascript" src="js/variable-3fed3780ec.js"></script>
+    <script src="js/jsLib/jQuery.js"></script>
+    <script src="js/jsLib/R_tool.js"></script>
+    <script src="js/jsLib/ua-device.js"></script>
+    <script type="text/javascript" src="js/jsLib/jqmousewhell.js"></script>
+    <script type="text/javascript" src="js/unsupport-8950950bc8.js"></script><!-- 神策 sdk -->
+    <script src="js/jsLib/sensorsdata.min.js"></script>
+    <script src="js/jsLib/heatmap.min.js"></script>
+    <script>(function (para) {
+            var p = para.sdk_url, n = para.name, w = window, d = document, s = 'script', x = null, y = null;
+            w['sensorsDataAnalytic201505'] = n;
+            w[n] = w[n] || function (a) { return function () { (w[n]._q = w[n]._q || []).push([a, arguments]); } };
+            var ifs = ['track', 'quick', 'register', 'registerPage', 'registerOnce', 'clearAllRegister', 'trackSignup', 'trackAbtest', 'setProfile', 'setOnceProfile', 'appendProfile', 'incrementProfile', 'deleteProfile', 'unsetProfile', 'identify', 'login', 'logout', 'trackLink', 'clearAllRegister'];
+            for (var i = 0; i < ifs.length; i++) {
+                w[n][ifs[i]] = w[n].call(null, ifs[i]);
+            }
+            if (!w[n]._t) {
+                x = d.createElement(s), y = d.getElementsByTagName(s)[0];
+                x.async = 1;
+                x.src = p;
+                y.parentNode.insertBefore(x, y);
+                w[n].para = para;
+            }
+        })({
+            sdk_url: 'js/jsLib/sensorsdata.min.js',
+            heatmap_url: 'js/jsLib/heatmap.min.js',
+            name: 'sa',
+            server_url: isProduction
+                ? 'https://dc.ones.ai/sa?project=production'
+                : 'https://dc.ones.ai/sa?project=default',
+            // show_log: !isProduction,
+            show_log: false,
+            current_domain: isProduction
+                ? 'ones.ai'
+                : 'dev.ones.team',
+            heatmap: {
+                clickmap: 'default',
+                scroll_notice_map: 'default',
+            }
+        });
+        // 神策 autoTrack 默认只采集 a, input, button 元素的数据，这里扩展一下
+        // 如果有需求，给目标元素加上 track-web-cick 的类名即可
+        $(document).on('click', '.track-web-click', function () {
+            sa.quick('trackHeatMap', this);
+        });
+
+        sa.quick('autoTrack'); //神策系统必须是1.4最新版及以上</script><!-- end sensors data -->
+    <script language="JavaScript">// 存储用户来源，用于统计用户来源。
+        var is_IE = function (ver) {
+            var b = document.createElement('b')
+            b.innerHTML = '<!--[if IE ' + ver + ']><i></i><![endif]-->'
+            return b.getElementsByTagName('i').length === 1
+        }
+        if (
+            document.referrer != '' &&
+            document.referrer != null &&
+            document.referrer.indexOf('https://ones.ai') !== 0
+        ) {
+            localStorage.setItem('referrer', Rtool.decodeURL(document.referrer));
+        };
+        var argMap = Rtool.getArgs();
+        var keyword = argMap.utm_term || argMap.keyword;
+        var channel = argMap.utm_source || argMap.channel;
+        if (keyword != null && keyword != '') {
+            localStorage.setItem('keyword', keyword);
+        };
+        if (channel != null && channel != '') {
+            localStorage.setItem('channel', channel);
+        }</script>
+    <script>var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?74b5f61e31435aedafb0ca993b7ffa9e";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();</script><!-- start Mixpanel -->
+    <script type="text/javascript">(function (e, a) {
+            if (!a.__SV) {
+                var b = window; try { var c, l, i, j = b.location, g = j.hash; c = function (a, b) { return (l = a.match(RegExp(b + "=([^&]*)"))) ? l[1] : null }; g && c(g, "state") && (i = JSON.parse(decodeURIComponent(c(g, "state"))), "mpeditor" === i.action && (b.sessionStorage.setItem("_mpcehash", g), history.replaceState(i.desiredHash || "", e.title, j.pathname + j.search))) } catch (m) { } var k, h; window.mixpanel = a; a._i = []; a.init = function (b, c, f) {
+                    function e(b, a) {
+                        var c = a.split("."); 2 == c.length && (b = b[c[0]], a = c[1]); b[a] = function () {
+                            b.push([a].concat(Array.prototype.slice.call(arguments,
+                                0)))
+                        }
+                    } var d = a; "undefined" !== typeof f ? d = a[f] = [] : f = "mixpanel"; d.people = d.people || []; d.toString = function (b) { var a = "mixpanel"; "mixpanel" !== f && (a += "." + f); b || (a += " (stub)"); return a }; d.people.toString = function () { return d.toString(1) + ".people (stub)" }; k = "disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config reset people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+                    for (h = 0; h < k.length; h++)e(d, k[h]); a._i.push([b, c, f])
+                }; a.__SV = 1.2; b = e.createElement("script"); b.type = "text/javascript"; b.async = !0; b.src = "undefined" !== typeof MIXPANEL_CUSTOM_LIB_URL ? MIXPANEL_CUSTOM_LIB_URL : "file:" === e.location.protocol && "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//) ? "https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js" : "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js"; c = e.getElementsByTagName("script")[0]; c.parentNode.insertBefore(b, c)
+            }
+        })(document, window.mixpanel || []);
+        mixpanel.init("5a1fc7bd8faaa6937f18a4fb6c0cb1db");</script><!-- end Mixpanel -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-134717999-1"></script>
+    <script>window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', isProduction ? 'UA-134717999-1' : 'UA-134713596-1');</script>
+</head>
+
+<body class="@@bodyClassName">
+    <!-- trace:website/index.html -->
+    <div class="top-nav-constance @@className">
+        <div class="top-nav normal-width"><a class="top-nav-logo" href="index.html"></a>
+            <div class="top-hamburger"></div>
+            <div class="top-nav-ul" data-focus-li="index">
+                <!--<a data-focus="index" href="index.html">首页</a>-->
+                <div data-focus="product" class="top-nav-ul-drop-down-able top-nav-left"><span class="top-nav-ul-drop-down-span"
+                        type="button">产品<div class="top-nav-ul-drop-arrow"></div></span>
+                    <div class="product-nav-dropdown top-nav-ul-drop-down-list"><a class="product-nav-first" href="project.html">
+                            <div class="product-nav-title">ONES Project</div>
+                            <div class="product-nav-content">一站式敏捷开发协作平台</div>
+                        </a><a href="pipeline.html">
+                            <div class="product-nav-title">ONES Pipeline</div>
+                            <div class="product-nav-content">轻松实践 DevOps 全流程</div>
+                        </a><a href="testcase.html">
+                            <div class="product-nav-title">ONES TestCase</div>
+                            <div class="product-nav-content">用例管理与缺陷追踪方案</div>
+                        </a><a href="wiki.html">
+                            <div class="product-nav-title">ONES Wiki</div>
+                            <div class="product-nav-content">一起构建团队知识库</div>
+                        </a></div>
+                </div>
+                <div data-focus="solution" class="top-nav-ul-drop-down-able top-nav-left"><span class="top-nav-ul-drop-down-span"
+                        type="button">解决方案<div class="top-nav-ul-drop-arrow"></div></span>
+                    <div class="product-nav-dropdown top-nav-ul-drop-down-list solution"><a class="product-nav-first"
+                            href="solutions_fintech.html">
+                            <div class="product-nav-title">金融科技行业</div>
+                        </a><a href="solutions_game.html">
+                            <div class="product-nav-title">游戏行业</div>
+                        </a><a href="solutions_social.html">
+                            <div class="product-nav-title">娱乐社交行业</div>
+                        </a><a href="solutions_newretail.html">
+                            <div class="product-nav-title">新零售行业</div>
+                        </a></div>
+                </div><a data-focus="case" class="top-nav-left" href="case.html">客户案例</a> <a data-focus="price" class="top-nav-left"
+                    href="pricing.html">产品定价</a> <a target="_blank" class="top-nav-left" href="https://help.ones.ai/ones/">帮助文档</a>
+                <div class="top-nav-right">
+                    <div class="top-registered track-web-click"><span class="index-pc">体验 Demo</span></div>
+                    <div class="top-contact track-web-click"><span class="top-contact-img"></span> <span class="top-contact-label">免费注册</span></div><a
+                        class="top-login track-web-click" href="https://ones.ai/project/#/home"><span class="top-login-img"></span>
+                        <span class="top-login-label">登录</span></a>
+                </div>
+            </div>
+            <!--<div class="top-button index-mobile">-->
+            <!--注册-->
+            <!--</div>-->
+        </div>
+    </div><a href="sign_up.html?s=0" class="mobile-top-registered @@signClassName">免费使用</a>
+    <script src="js/top_nav-5dda8e4def.js"></script>
+    <script>$('.top-registered').click(function () {
+            if (isProduction) {
+                mixpanel.track("topbar_Demo click");
+                _hmt.push(['_trackEvent', 'topbar_Demo click', 'Button click'])
+            } else {
+                console.log("topbar_Demo click");
+            }
+            location.href = "demo.html";
+        });
+        $(document).on('blur', 'input', function () {
+            var isPassword = this.type === 'password';
+            var isApplyInput = this.hasAttribute('data-text');
+            if (!isPassword) {
+                sa.track(isApplyInput ? 'contact_us' : 'informationInput', {
+                    type: $(this).attr('data-content-type')
+                        || $(this).attr('placeholder')
+                        || '未知',
+                    content: $(this).val()
+                })
+            }
+        });
+        $(document).on('change', 'select', function () {
+            sa.track('informationInput', {
+                type: $(this).attr('data-content-type') || '未知',
+                content: $(this).val()
+            })
+        });</script>
+    <script type="text/javascript">if (isProduction) {
+            mixpanel.track("website index pageview");
+            _hmt.push(['_trackEvent', 'website index pageview', 'pageview'])
+        } else {
+            console.log("website index pageview");
+        }</script>
+    <div class="top index-top tilt-component">
+        <div class="top-content">
+            <div class="top-content-slogan">
+                <div class="main-content-1">企业级研发管理解决方案</div>
+                <div class="main-content-1-sub">实践敏捷开发与持续交付，追踪项目进度，量化团队表现</div>
+                <!--<div class="main-content-2">-->
+                <!--ONES 是整合敏捷开发和 DevOps 的研发管理解决方案。结合先进的管理思想，ONES 助力企业员工以创新的方式进行协作，提高工程质量，实现快速迭代。-->
+                <!--</div>-->
+            </div>
+            <div class="top-content-try">
+                <!--<input class="top-content-try-input email-input" placeholder="请输入邮箱地址...">-->
+                <div class="top-content-try-button @@className track-web-click"><span>免费使用</span></div>
+            </div>
+        </div>
+        <div class="tilt-triangle tilt-triangle-bottom-left"></div>
+    </div>
+    <div class="ie8">
+        <div class="index-content">
+            <div class="index-content1 normal-width">
+                <div class="title">敏捷开发的最佳实践</div>
+                <div class="subtitle">敏捷开发采用增量迭代方法控制风险、优化可预见性，并通过沟通与承诺激发团队成员的动力。ONES 为你提供优秀的敏捷开发实践。 <a href="project.html">了解更多&gt;&gt;&gt;</a></div>
+                <div class="content">
+                    <div class="index-content-image index-content-image-1"><img src="images/index/scrumX2-a01b2b8001.png"
+                            width="504" height="349" data-src2x="images/index/scrumX2-a01b2b8001.png" /></div>
+                    <ul class="list">
+                        <li>
+                            <div class="list-img"></div>
+                            <div class="list-content"><b>为需求安排迭代</b><br>将需求分配到对应的迭代，支持多迭代并行开发。</div>
+                        </li>
+                        <li>
+                            <div class="list-img"></div>
+                            <div class="list-content"><b>估算版本时间</b><br>通过故事点或工时来预估迭代时间，调整版本计划。</div>
+                        </li>
+                        <li>
+                            <div class="list-img"></div>
+                            <div class="list-content"><b>检验迭代进度</b><br>提供燃尽图，帮助团队检验进度。</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="index-content2 normal-width">
+                <div class="title">深度整合 DevOps，实现流程自动化</div>
+                <div class="subtitle">DevOps 以流程自动化提高部署频率，快速识别和纠正问题，提高工程质量、缩短版本周期。ONES 深度整合 DevOps 工具链，帮助团队轻松实践 DevOps。
+                    <a href="pipeline.html">了解更多&gt;&gt;&gt;</a></div>
+                <div class="content">
+                    <div class="index-content-image index-content-image-2"><img src="images/index/devopsX2-9e66dfe89c.png"
+                            width="461" height="318" data-src2x="images/index/devopsX2-9e66dfe89c.png" /></div>
+                    <ul class="list">
+                        <li>
+                            <div class="list-img"></div>
+                            <div class="list-content"><b>代码关联 backlog</b><br>通过代码关联控制流程并校验测试覆盖率。</div>
+                        </li>
+                        <li>
+                            <div class="list-img"></div>
+                            <div class="list-content"><b>CI 持续集成</b><br>通过自动化构建和自动化测试，建立的持续集成的流水线。</div>
+                        </li>
+                        <li>
+                            <div class="list-img"></div>
+                            <div class="list-content"><b>CD 持续交付</b><br>支持快速公有云部署、Docker 容器部署，形成 DevOps 闭环。</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="index-content1 normal-width">
+                <div class="title">支持私有部署</div>
+                <div class="subtitle">集团专享服务支持私有化部署所有产品、多团队数据隔离、对接内部系统，专属客户成功团队提供技术支持。超过 100 人的企业客户里，有 87% 选择了集团专享服务。</div>
+                <div class="content">
+                    <div class="index-content-image index-content-image-1"><img src="images/index/index-pipelineX2-f866bf5994.png"
+                            width="507" height="359" data-src2x="images/index/index-pipelineX2-f866bf5994.png" /></div>
+                    <ul class="list">
+                        <li>
+                            <div class="list-img"></div>
+                            <div class="list-content"><b>私有化部署</b><br>数据与外网完全隔离，高度安全可控，随时可访问完整数据。</div>
+                        </li>
+                        <li>
+                            <div class="list-img"></div>
+                            <div class="list-content"><b>多团队数据隔离</b><br>支持组织统一管理人员名单，组织下的团队数据互相隔离。</div>
+                        </li>
+                        <li>
+                            <div class="list-img"></div>
+                            <div class="list-content"><b>对接内部系统</b><br>支持对接企业内部系统（如 LDAP），支持完备的 Restful API。</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="index-solution normal-width">
+                <div class="title">解决方案</div>
+                <div class="subtitle">支持游戏、金融科技、新零售、娱乐社交等行业，覆盖研发管理所有场景。</div>
+                <div class="index-solution-card-list">
+                    <div class="index-solution-card index-solution-card-left"><a href="solutions_fintech.html" class="index-solution-card-content-link"
+                            style="position: absolute;width: 100%; height:100%; left: 0; right: 0"></a>
+                        <div class="index-solution-card-img"><img src="images/index/solution-moneyX2-47ef95173d.png"
+                                width="148" height="148" data-src2x="images/index/solution-moneyX2-47ef95173d.png" /></div>
+                        <div class="index-solution-card-content">
+                            <div class="index-solution-card-content-title">金融科技行业</div>
+                            <div class="index-solution-card-content-main">金融科技产品落地实施时，需要对接资金、数据源、消费者等不同合作方，ONES
+                                为各类复杂业务的需求对接和管理提供灵活的支持。</div><a href="solutions_fintech.html" class="index-solution-card-content-link">了解更多
+                                <img src="images/blue-right-arrowX2-c4281a91fe.png" width="13" height="10" data-src2x="images/blue-right-arrowX2-c4281a91fe.png" /></a>
+                        </div>
+                    </div>
+                    <div class="index-solution-card index-solution-card-right"><a href="solutions_game.html" class="index-solution-card-content-link"
+                            style="position: absolute;width: 100%; height:100%; left: 0; right: 0"></a>
+                        <div class="index-solution-card-img"><img src="images/index/solution-gameX2-d209a04506.png"
+                                width="148" height="148" data-src2x="images/index/solution-gameX2-d209a04506.png" /></div>
+                        <div class="index-solution-card-content">
+                            <div class="index-solution-card-content-title">游戏行业</div>
+                            <div class="index-solution-card-content-main">从产品研发期的项目管理，到运营期的版本迭代管理，ONES
+                                均提供全方位的支持，让游戏开发者更加专注于游戏开发本身。</div><a href="solutions_game.html" class="index-solution-card-content-link">了解更多
+                                <img src="images/blue-right-arrowX2-c4281a91fe.png" width="13" height="10" data-src2x="images/blue-right-arrowX2-c4281a91fe.png" /></a>
+                        </div>
+                    </div>
+                    <div class="index-solution-card index-solution-card-left"><a href="solutions_social.html" class="index-solution-card-content-link"
+                            style="position: absolute;width: 100%; height:100%; left: 0; right: 0"></a>
+                        <div class="index-solution-card-img"><img src="images/index/solution-communityX2-0ffcdd8482.png"
+                                width="148" height="148" data-src2x="images/index/solution-communityX2-0ffcdd8482.png" /></div>
+                        <div class="index-solution-card-content">
+                            <div class="index-solution-card-content-title">娱乐社交行业</div>
+                            <div class="index-solution-card-content-main">ONES
+                                帮助各类娱乐和社交产品快速更新迭代，以响应用户个性化需求和流行热点，不断验证产品可行性。</div><a href="solutions_social.html" class="index-solution-card-content-link">了解更多
+                                <img src="images/blue-right-arrowX2-c4281a91fe.png" width="13" height="10" data-src2x="images/blue-right-arrowX2-c4281a91fe.png" /></a>
+                        </div>
+                    </div>
+                    <div class="index-solution-card index-solution-card-right"><a href="solutions_newretail.html" class="index-solution-card-content-link"
+                            style="position: absolute;width: 100%; height:100%; left: 0; right: 0"></a>
+                        <div class="index-solution-card-img"><img src="images/index/solution-new-saleX2-bcd01b5604.png"
+                                width="148" height="148" data-src2x="images/index/solution-new-saleX2-bcd01b5604.png" /></div>
+                        <div class="index-solution-card-content">
+                            <div class="index-solution-card-content-title">新零售行业</div>
+                            <div class="index-solution-card-content-main">ONES 助力新零售企业从 0 到 1
+                                打造贯穿业务流程、跨内外部、全渠道的业务系统，快速开启员工数字化工作方式和新营销模式。</div><a href="solutions_newretail.html"
+                                class="index-solution-card-content-link">了解更多 <img src="images/blue-right-arrowX2-c4281a91fe.png"
+                                    width="13" height="10" data-src2x="images/blue-right-arrowX2-c4281a91fe.png" /></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="index-product normal-width">
+                <div class="title">产品矩阵</div>
+                <div class="subtitle">无论集团企业还是创业团队，ONES 的产品矩阵都能为您定制高效的解决方案。</div>
+                <div class="index-product-list"><a href="project.html" class="index-product-list-cell">
+                        <div class="index-product-list-cell-image"><img src="images/index/index-product-projectX2-da01948869.png"
+                                width="79" height="98" data-src2x="images/index/index-product-projectX2-da01948869.png" /></div>
+                        <div class="index-product-list-cell-content">
+                            <div class="index-product-list-cell-content-title">Project</div>
+                            <div class="index-product-list-cell-content-info">ONES Project 是敏捷开发的核心功能平台。了解如何在 ONES
+                                Project 进行项目规划、进度跟踪，实现快速迭代。</div>
+                            <div class="index-mobile index-product-list-cell-content-know-more">了解更多</div>
+                        </div>
+                    </a><a href="pipeline.html" class="index-product-list-cell">
+                        <div class="index-product-list-cell-image"><img src="images/index/index-product-pipelineX2-9931cfa78f.png"
+                                width="79" height="98" data-src2x="images/index/index-product-pipelineX2-9931cfa78f.png" /></div>
+                        <div class="index-product-list-cell-content">
+                            <div class="index-product-list-cell-content-title">Pipeline</div>
+                            <div class="index-product-list-cell-content-info">ONES Pipeline 帮助团队搭建完整的 DevOps
+                                工具链，并让代码提交、构建、部署与业务一一对应。</div>
+                            <div class="index-mobile index-product-list-cell-content-know-more">了解更多</div>
+                        </div>
+                    </a><a href="testcase.html" class="index-product-list-cell">
+                        <div class="index-product-list-cell-image"><img src="images/index/index-product-testcaseX2-3bf59db031.png"
+                                width="79" height="98" data-src2x="images/index/index-product-testcaseX2-3bf59db031.png" /></div>
+                        <div class="index-product-list-cell-content">
+                            <div class="index-product-list-cell-content-title">TestCase</div>
+                            <div class="index-product-list-cell-content-info">ONES TestCase
+                                提供全流程的用例管理与缺陷追踪方案，帮助团队组织和管理测试工作，提高测试效率，保证交付质量。</div>
+                            <div class="index-mobile index-product-list-cell-content-know-more">了解更多</div>
+                        </div>
+                    </a><a href="wiki.html" class="index-product-list-cell index-product-list-cell-last">
+                        <div class="index-product-list-cell-image"><img src="images/index/index-product-wikiX2-3a4e0221b5.png"
+                                width="79" height="98" data-src2x="images/index/index-product-wikiX2-3a4e0221b5.png" /></div>
+                        <div class="index-product-list-cell-content">
+                            <div class="index-product-list-cell-content-title">Wiki</div>
+                            <div class="index-product-list-cell-content-info">ONES Wiki 是立体的知识管理方案，支持文档协作、知识沉淀和团队知识学习。</div>
+                            <div class="index-mobile index-product-list-cell-content-know-more">了解更多</div>
+                        </div>
+                    </a></div>
+            </div>
+            <!--<div class="why-choose-ones">-->
+            <!--<div class="why-choose-ones-title">-->
+            <!--为什么选择ONES-->
+            <!--</div>-->
+            <!--<div class="why-choose-ones-tabs">-->
+            <!--<div class="why-choose-ones-tabs-single" data-first-id="0">-->
+            <!--第一个tab-->
+            <!--</div>-->
+            <!--<div class="why-choose-ones-tabs-single" data-first-id="1">-->
+            <!--第二个tab-->
+            <!--</div>-->
+            <!--<div class="why-choose-ones-tabs-single" data-first-id="2">-->
+            <!--第三个tab-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--<div class="why-choose-ones-second-tabs">-->
+            <!--<div class="why-choose-ones-second-tabs-single" id="why-choose-ones-second-tabs-single-0">-->
+            <!--<div class="why-choose-ones-second-tabs-child" data-second-id="0">-->
+            <!--第一个子的第一个-->
+            <!--</div>-->
+            <!--<div class="why-choose-ones-second-tabs-child" data-second-id="1">-->
+            <!--第一个子的第二个-->
+            <!--</div>-->
+            <!--<div class="why-choose-ones-second-tabs-child" data-second-id="2">-->
+            <!--第一个子的第三个-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--<div class="why-choose-ones-second-tabs-single" id="why-choose-ones-second-tabs-single-1">-->
+            <!--<div class="why-choose-ones-second-tabs-child" data-second-id="0">-->
+            <!--第2个子的第一个-->
+            <!--</div>-->
+            <!--<div class="why-choose-ones-second-tabs-child" data-second-id="1">-->
+            <!--第2个子的第二个-->
+            <!--</div>-->
+            <!--<div class="why-choose-ones-second-tabs-child" data-second-id="2">-->
+            <!--第2个子的第三个-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--<div class="why-choose-ones-second-tabs-single" id="why-choose-ones-second-tabs-single-2">-->
+            <!--<div class="why-choose-ones-second-tabs-child" data-second-id="0">-->
+            <!--第3个子的第一个-->
+            <!--</div>-->
+            <!--<div class="why-choose-ones-second-tabs-child" data-second-id="1">-->
+            <!--第3个子的第二个-->
+            <!--</div>-->
+            <!--<div class="why-choose-ones-second-tabs-child" data-second-id="2">-->
+            <!--第3个子的第三个-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--<div class="why-choose-ones-content">-->
+            <!--<div class="why-choose-ones-content-single" id="why-choose-ones-content-single-0-0">-->
+            <!--0-0的内容-->
+            <!--</div>-->
+            <!--<div class="why-choose-ones-content-single" id="why-choose-ones-content-single-0-1">-->
+            <!--0-1的内容-->
+            <!--</div>-->
+            <!--<div class="why-choose-ones-content-single" id="why-choose-ones-content-single-0-2">-->
+            <!--0-2的内容-->
+            <!--</div>-->
+            <!--<div class="why-choose-ones-content-single" id="why-choose-ones-content-single-1-0">-->
+            <!--1-0的内容-->
+            <!--</div>-->
+            <!--<div class="why-choose-ones-content-single" id="why-choose-ones-content-single-1-1">-->
+            <!--1-1的内容-->
+            <!--</div>-->
+            <!--<div class="why-choose-ones-content-single" id="why-choose-ones-content-single-1-2">-->
+            <!--1-2的内容-->
+            <!--</div>-->
+            <!--<div class="why-choose-ones-content-single" id="why-choose-ones-content-single-2-0">-->
+            <!--2-0的内容-->
+            <!--</div>-->
+            <!--<div class="why-choose-ones-content-single" id="why-choose-ones-content-single-2-1">-->
+            <!--2-1的内容-->
+            <!--</div>-->
+            <!--<div class="why-choose-ones-content-single" id="why-choose-ones-content-single-2-2">-->
+            <!--2-2的内容-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--<script src="js/index_double-48559a6ca9.js" ></script>-->
+            <div class="index-content3">
+                <div class="normal-width">
+                    <div class="title">一站式服务体系</div>
+                    <div class="subtitle">ONES 未止步于打造敏捷开发的支撑平台，更与行业专家和资深敏捷教练携手，从方案调研、部署实施到系统使用培训，提供全方位的技术支持服务。</div>
+                    <div class="index-content3-list">
+                        <div class="index-content3-list-cell">
+                            <div class="index-content3-list-cell-image"><img src="images/index/index-service-beforeX2-f1f7c49ade.png"
+                                    width="42" height="43" data-src2x="images/index/index-service-beforeX2-f1f7c49ade.png" /></div>
+                            <div class="index-content3-list-cell-content">
+                                <div class="index-content3-list-cell-content-title">售前评估</div>
+                                <div class="index-content3-list-cell-content-info">与行业专家和资深敏捷教练携手定制你的专属解决方案</div>
+                            </div>
+                        </div>
+                        <div class="index-content3-list-cell">
+                            <div class="index-content3-list-cell-image"><img src="images/index/index-service-buildX2-9842b82b3d.png"
+                                    width="40" height="40" data-src2x="images/index/index-service-buildX2-9842b82b3d.png" /></div>
+                            <div class="index-content3-list-cell-content">
+                                <div class="index-content3-list-cell-content-title">部署实施</div>
+                                <div class="index-content3-list-cell-content-info">客户成功团队保证方案实施，提供线上、线下培训</div>
+                            </div>
+                        </div>
+                        <div class="index-content3-list-cell index-content3-list-cell-last">
+                            <div class="index-content3-list-cell-image"><img src="images/index/index-service-contactX2-0d0236db05.png"
+                                    width="46" height="43" data-src2x="images/index/index-service-contactX2-0d0236db05.png" /></div>
+                            <div class="index-content3-list-cell-content">
+                                <div class="index-content3-list-cell-content-title">客服支持</div>
+                                <div class="index-content3-list-cell-content-info">7*24 小时全天候帮助通道，核心开发团队提供技术支持</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="who-use index-footer">
+        <div class="who-use-title @@extraTitleClass">他们正在使用 ONES ……</div>
+        <div class="who-use-list normal-width">
+            <div class="who-using"><img src="images/who_use/xishanjuX2-d9b36e8ffb.png" width="101" height="36"
+                    data-src2x="images/who_use/xishanjuX2-d9b36e8ffb.png" /></div>
+            <div class="who-using"><img src="images/who_use/xiaopengqicheX2-e6cd0c11ac.png" width="141" height="20"
+                    data-src2x="images/who_use/xiaopengqicheX2-e6cd0c11ac.png" /></div>
+            <div class="who-using"><img src="images/who_use/huyaX2-962f433791.png" width="111" height="34" data-src2x="images/who_use/huyaX2-962f433791.png" /></div>
+            <div class="who-using"><img src="images/who_use/kedaxunfeiX2-e2a4e9a548.png" width="104" height="32"
+                    data-src2x="images/who_use/kedaxunfeiX2-e2a4e9a548.png" /></div>
+            <div class="who-using"><img src="images/who_use/sdoX2-3a6dcb98c5.png" width="107" height="29" data-src2x="images/who_use/sdoX2-3a6dcb98c5.png" /></div>
+            <div class="who-using"><img src="images/who_use/wpsX2-828a055aae.png" width="95" height="24" data-src2x="images/who_use/wpsX2-828a055aae.png" /></div>
+            <div class="who-using"><img src="images/who_use/xiaomingchuxingX2-8d17947903.png" width="115" height="27"
+                    data-src2x="images/who_use/xiaomingchuxingX2-8d17947903.png" /></div>
+            <div class="who-using"><img src="images/who_use/zhuiyiX2-e8f9101ce8.png" width="71" height="40" data-src2x="images/who_use/zhuiyiX2-e8f9101ce8.png" /></div>
+            <div class="who-using"><img src="images/who_use/zhongguoxintiandiX2-0b10b23d89.png" width="130" height="30"
+                    data-src2x="images/who_use/zhongguoxintiandiX2-0b10b23d89.png" /></div>
+            <div class="who-using"><img src="images/who_use/huayuX2-594d04a77a.png" width="104" height="28" data-src2x="images/who_use/huayuX2-594d04a77a.png" /></div>
+            <div class="who-using"><img src="images/who_use/tangecheX2-d9ffb562f8.png" width="91" height="29"
+                    data-src2x="images/who_use/tangecheX2-d9ffb562f8.png" /></div>
+            <div class="who-using"><img src="images/who_use/lianghuapaiX2-fdc9fe395a.png" width="100" height="44"
+                    data-src2x="images/who_use/lianghuapaiX2-fdc9fe395a.png" /></div>
+            <div class="who-using"><img src="images/who_use/yiyunX2-f9b71f3e92.png" width="123" height="26" data-src2x="images/who_use/yiyunX2-f9b71f3e92.png" /></div>
+            <div class="who-using"><img src="images/who_use/jiayoubaoX2-2638ec4a76.png" width="94" height="33"
+                    data-src2x="images/who_use/jiayoubaoX2-2638ec4a76.png" /></div>
+            <div class="who-using"><img src="images/who_use/xiaozhuX2-650e5200b8.png" width="80" height="39" data-src2x="images/who_use/xiaozhuX2-650e5200b8.png" /></div>
+        </div>
+        <div class="who-use-bk"></div>
+    </div>
+    <div class="try-use">
+        <div class="tru-use-content">
+            <div class="try-use-hint">开启高效研发之旅</div>
+            <div class="try-use-title">ONES 支持免费使用，以帮助您快速上手和了解 。您也可以直接与我们的解决方案专家沟通，了解和评估 ONES 如何帮助您的团队更进一步。</div>
+            <div class="try-use-input">
+                <!--<input class="try-use-email email-input" placeholder="请输入邮箱地址...">-->
+                <div class="top-content-try-button try-use-button track-web-click"><span>免费使用</span></div>
+                <div class="top-content-concat-button track-web-click contact-us-button">联系我们</div>
+            </div>
+        </div>
+        <div class="try-use-bk"></div>
+        <div class="tilt-triangle tilt-triangle-bottom-right"></div>
+    </div>
+    <!--<div class="try-use tilt-component">-->
+    <!--<div class="try-use-bk"></div>-->
+    <!--<div class="tru-use-content">-->
+    <!--<div class="try-use-hint">-->
+    <!--准备好了吗？-->
+    <!--</div>-->
+    <!--<div class="try-use-title">-->
+    <!--来开启高效研发之旅！-->
+    <!--</div>-->
+    <!--<div class="try-use-input">-->
+    <!--<form class="registered-form">-->
+    <!--<input class="try-use-email email-input" placeholder="请输入邮箱地址...">-->
+    <!--<div class="try-use-button registered-form-submit">马上体验</div>-->
+    <!--</form>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--<div class="tilt-triangle tilt-triangle-bottom-right">-->
+    <!--</div>-->
+    <!--</div>-->
+    <div class="footer normal-width"><a href="http://a.app.qq.com/o/simple.jsp?pkgname=ai.ones.project.android" class="index-mobile footer-mobile-download"><span
+                class="footer-mobile-download-icon"></span> <span class="footer-mobile-download-content">手机版下载</span></a>
+        <div class="company-message index-mobile">
+            <div class="company-contact">
+                <div class="company-contact-cell">
+                    <div class="company-contact-cell-ico ico-phone"></div>
+                    <div class="company-contact-cell-content">400-188-1518</div>
+                </div>
+                <div class="company-contact-cell">
+                    <div class="company-contact-cell-ico ico-email"></div>
+                    <div class="company-contact-cell-content">support@ones.ai</div>
+                </div>
+                <div class="company-contact-cell">
+                    <div class="company-contact-cell-ico ico-wechat"></div>
+                    <div class="company-contact-cell-content">关注 ONES 公众号</div>
+                </div>
+                <div class="company-contact-cell index-mobile">
+                    <div class="company-contact-cell-wechat-qrcode"><img src="images/wechat_qrcodeX2-f52584fc6c.png"
+                            width="94" height="94" data-src2x="images/wechat_qrcodeX2-f52584fc6c.png" /></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-fast index-pc">
+            <div class="footer-fast-component">
+                <div class="footer-fast-title">产品</div><a href="project.html">ONES Project</a> <a href="pipeline.html">ONES
+                    Pipeline</a> <a href="testcase.html">ONES TestCase</a> <a href="wiki.html">ONES Wiki</a>
+                <!--<a>数据安全</a>-->
+            </div>
+            <div class="footer-fast-component">
+                <div class="footer-fast-title">解决方案</div><a href="solutions_fintech.html">金融科技</a> <a href="solutions_game.html">游戏</a>
+                <a href="solutions_social.html">娱乐社交</a> <a href="solutions_newretail.html">新零售</a>
+            </div>
+            <div class="footer-fast-component">
+                <div class="footer-fast-title">服务支持</div><a href="pricing.html">产品定价</a> <a target="_blank" href="https://help.ones.ai/ones/">帮助手册</a>
+                <!--<a>数据安全</a>-->
+            </div>
+            <div class="footer-fast-component">
+                <div class="footer-fast-title">关于我们</div><a href="about.html">关于 ONES</a> <a href="contactus.html">联系我们</a>
+                <a href="joinus.html">加入我们</a>
+                <!--<a>媒体报道</a>--> <a href="cooperation.html">合作伙伴</a>
+                <!--<a>隐私声明</a>-->
+            </div>
+            <div class="footer-fast-component footer-fast-component-last">
+                <div class="footer-fast-title">关注公众号</div>
+                <div class="footer-fast-wechat-code"><img src="images/wechat-qrcodeX2-b0f690ea77.png" width="98" height="98"
+                        data-src2x="images/wechat-qrcodeX2-b0f690ea77.png" /></div>
+                <div class="footer-fast-wechat-code-hint">获取更多<br>研发项目管理资讯</div>
+            </div>
+            <div class="footer-fast-component footer-fast-component-last">
+                <div class="footer-fast-title">下载移动端</div>
+                <div class="footer-fast-wechat-code"><img src="images/download_qrcodeX2-b20b101ab8.png" width="98"
+                        height="98" data-src2x="images/download_qrcodeX2-b20b101ab8.png" /></div>
+                <div class="footer-fast-wechat-code-hint">随时随地<br>了解项目进度</div>
+            </div>
+            <!-- <div class="footer-fast-component footer-download">
+            <div class="footer-fast-title">下载</div>
+            <a>
+                <span class="ios-download"></span>App Store下载
+                <div class="download-ios-qrcode">
+                    <div class="download-ios-qrcode-primary"></div>
+                    <div class="download-ios-qrcode-triangle"></div>
+                </div>
+            </a>
+            <a>
+                <span class="android-download"></span>Android 版下载
+                <div class="download-android-qrcode">
+                    <div class="download-android-qrcode-primary"></div>
+                    <div class="download-android-qrcode-triangle"></div>
+                </div>
+            </a>
+        </div> -->
+            <script>$(".footer-download").on("touchstart", "a", function () {
+                    $(this).addClass("footer-download-hover");
+                })</script>
+        </div>
+    </div>
+    <div class="apply">
+        <div class="apply-bg"></div>
+        <div class="apply-main">
+            <div class="apply-step-2">
+                <div class="apply-close"></div>
+                <div class="apply-step-header"><span class="language" data-text="index.apply.step.header">联系我们</span></div>
+                <hr class="apply-step-hr">
+                <div class="apply-hint"><span class="language" data-text="index.apply.step.hint">请填写以下信息。我们的资深顾问会在一个工作日内与您沟通，帮助您更高效地评估和使用
+                        ONES.AI。</span></div>
+                <div class="apply-input"><input data-content-type="姓名" data-name="nickname" class="placeholder-language"
+                        data-text="index.apply.step.name" id="apply-nickname" type="text" placeholder="姓名" /> <input
+                        data-content-type="手机号" data-name="phone" class="placeholder-language" data-text="index.apply.step.phone"
+                        id="apply-phone" type="text" placeholder="手机号码" /> <input data-content-type="邮箱" data-name="email"
+                        class="placeholder-language" data-text="index.apply.step.email" id="apply-email" type="text"
+                        placeholder="邮箱地址" /> <input data-content-type="团队名称" data-name="team_name" class="placeholder-language"
+                        data-text="index.apply.step.teamName" id="apply-team-name" type="text" placeholder="公司或团队名称" />
+                    <div data-name="team_scale" id="team_scale" class="apply-select team-size">
+                        <div class="select-title">团队规模</div>
+                        <ul class="select-option" data-content-type="团队规模">
+                            <li>1-30</li>
+                            <li>30-100</li>
+                            <li>100-500</li>
+                            <li>500~</li>
+                        </ul>
+                    </div>
+                    <div data-name="industry" id="industry" class="apply-select team-subjection">
+                        <div class="select-title">所属行业</div>
+                        <ul class="select-option" data-content-type="所属行业">
+                            <li>软件研发</li>
+                            <li>金融业</li>
+                            <li>建筑业</li>
+                            <li>制造业</li>
+                            <li>化学工业</li>
+                            <li>教育培训</li>
+                            <li>文化传媒</li>
+                            <li>广告营销</li>
+                            <li>游戏动漫</li>
+                            <li>电子商务</li>
+                            <li>医疗健康</li>
+                            <li>生活服务</li>
+                            <li>招聘</li>
+                            <li>其他</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="apply-button"><a href="javascript:;"><span class="language" data-text="index.apply.step.ok">确定</span></a></div>
+                <div class="otherMethod">
+                    <div class="info"><span class="title">或直接联系我们</span>
+                        <div class="line line-1"></div>
+                        <div class="line line-2"></div>
+                    </div>
+                    <div class="methods"><span class="phone"><img src="images/icon_phone_greyX2-a3fecb8ed2.png" style="width:16px;height:16px;vertical-align:text-bottom;"
+                                width="16" height="16" data-src2x="images/icon_phone_greyX2-a3fecb8ed2.png" />
+                            400-188-1518 </span><span class="email"><img src="images/icon_email_greyX2-762aeb3848.png"
+                                style="width:18px;height:14px;vertical-align:text-bottom;" width="18" height="14"
+                                data-src2x="images/icon_email_greyX2-762aeb3848.png" /> <a type="email" href="mailto:support@ones.ai">support@ones.ai</a></span></div>
+                </div>
+            </div>
+            <div class="apply-step-3">
+                <div class="apply-close"></div>
+                <div class="apply-thansk">
+                    <div class="apply-thanks-img"></div>
+                    <div class="apply-thanks-content-1"><span class="language" data-text="index.apply.step.thans">预约成功</span></div>
+                    <div class="apply-thanks-content-2"><span class="language" data-text="index.apply.step.invitemsg">感谢您的支持！我们的资深顾问会在一个工作日内与您联系。</span></div>
+                    <div class="apply-ok"><span class="language" data-text="index.apply.step.ok">确定</span></div>
+                </div>
+            </div>
+            <div class="apply-step-4">
+                <div class="apply-close"></div>
+                <div class="apply-thansk">
+                    <div class="apply-thanks-img"></div>
+                    <div class="apply-thanks-content-1">激活邮件已发送</div>
+                    <div class="apply-thanks-content-2">请检查你的邮箱，打开激活邮件里的链接。</div>
+                    <div class="apply-ok"><span class="language" data-text="index.apply.step.ok">确定</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-company-msg index-mobile @@className">
+        <div class="footer-line"></div>
+        <div class="footer-copyright">Copyright ©<span class="copyright-year">2019</span> ONES.AI 深圳复临科技有限公司 <a href="http://www.miibeian.gov.cn/">粤ICP备15032127号</a></div>
+    </div>
+    <div class="footer-company-msg index-pc">
+        <div class="normal-width">
+            <div class="footer-company-left">
+                <div class="footer-copyright">Copyright ©<span class="copyright-year">2019</span> ONES.AI 深圳复临科技有限公司 <a
+                        href="http://www.miibeian.gov.cn/">粤ICP备15032127号</a></div>
+                <div class="footer-contact">
+                    <div class="footer-contact-single-msg"><img src="images/icon_phone_greyX2-a3fecb8ed2.png" width="16"
+                            height="16" data-src2x="images/icon_phone_greyX2-a3fecb8ed2.png" />
+                        <div class="footer-contact-single-msg-content">400-188-1518</div>
+                    </div>
+                    <div class="footer-contact-single-msg"><img src="images/icon_email_greyX2-762aeb3848.png" width="18"
+                            height="14" data-src2x="images/icon_email_greyX2-762aeb3848.png" />
+                        <div class="footer-contact-single-msg-content">support@ones.ai</div>
+                    </div>
+                    <!--<div class="footer-contact-single-msg">-->
+                    <!--<img src="images/icon_wechat_grey-a29c44bfac.png" width="20" height="20">-->
+                    <!--<div class="footer-contact-single-msg-content">-->
+                    <!--公众号: 万事ONES-->
+                    <!--</div>-->
+                    <!--</div>-->
+                </div>
+            </div>
+            <div class="footer-company-right"><img src="images/footer_logo_greyX2-f3fc0a7f32.png" width="25" height="29"
+                    class="footer-company-right-img" data-src2x="images/footer_logo_greyX2-f3fc0a7f32.png" />
+                <div class="footer-company-right-line"></div>
+                <div class="footer-company-right-language">中文(简体)</div>
+            </div>
+        </div>
+    </div>
+    <script language="JavaScript">function checkAndSetFooterPoint() {
+            $(".footer-company-msg").removeClass('footer-company-msg-fixed');
+            var footerToBottom = document.documentElement.clientHeight - $(".footer-company-msg.index-pc").offset().top - $(".footer-company-msg.index-pc").height();
+            if (footerToBottom > 0 && ua.device.type == 'desktop' && window.innerWidth > 800) {
+                $(".footer-company-msg").addClass('footer-company-msg-fixed');
+            }
+        }
+        if (!is_IE(8) && !is_IE(7) && !is_IE(6)) {
+            $(window).scroll(function (e) {
+                checkAndSetFooterPoint();
+            });
+            $(window).resize(function () {
+                checkAndSetFooterPoint();
+            })
+            checkAndSetFooterPoint();
+        }</script>
+    <div class="ones-toast ones-toast-error">
+        <div class="ones-toast-content">
+            <div class="ones-toast-error-img"></div>
+            <div class="ones-toast-msg">您的邮箱已经申请过了</div><span class="ones-toast-collapse-btn"></span>
+            <div class="ones-toast-collapse-msg">
+                <div class="msg-details">
+                    <div class="detail">
+                        <div class="key"></div>
+                        <div class="value"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>var l = window.localStorage;
+        window.intercomSettings = {
+            app_id: "spkug8a4",
+            url: window.location.href,
+            user_id: l.user_id,
+            utm_source: l.channel,
+            user_name: l.user_name,
+            email: l.email,
+            team_uuid: l.team_uuid,
+            team_name: l.team_name
+        };</script>
+    <script>(function () { var w = window; var ic = w.Intercom; if (typeof ic === "function") { ic('reattach_activator'); ic('update', intercomSettings); } else { var d = document; var i = function () { i.c(arguments) }; i.q = []; i.c = function (args) { i.q.push(args) }; w.Intercom = i; function l() { var s = d.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = 'https://widget.intercom.io/widget/spkug8a4'; var x = d.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x); } if (w.attachEvent) { w.attachEvent('onload', l); } else { w.addEventListener('load', l, false); } } })()</script>
+    <script src="js/common-005e578e1e.js"></script>
+    <script src="js/language-bed86fe6e2.js"></script>
+    <script language="JavaScript">var lang = new Rlanguage.language("language");
+        lang.addAttrLanguage("placeholder-language", "placeholder");
+        lang.addAttrLanguage("language-img", "src");</script>
+    <script language="JavaScript">$('.top-content-try').children(".top-content-try-button").click(function () {
+            if (isProduction) {
+                mixpanel.track("freetouse_button click");
+                _hmt.push(['_trackEvent', 'freetouse_button click', 'Button click'])
+            } else {
+                console.log("freetouse_button click");
+            }
+        });
+        $('.try-use-input').children(".top-content-try-button").click(function () {
+            if (isProduction) {
+                mixpanel.track("freetouse_banner click");
+                _hmt.push(['_trackEvent', 'freetouse_banner click', 'Button click'])
+            } else {
+                console.log("freetouse_banner click");
+            }
+        });
+        var commitMessage = { "commit": "d0f9a73eb7f775c7716e52be66aa18a68a577dba", "build": 1533 };
+        console.log(commitMessage);</script>
+</body>
+
+</html>

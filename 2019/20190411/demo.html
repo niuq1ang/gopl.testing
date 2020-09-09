@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DEMO | ONES</title>
+    <link rel="stylesheet" type="text/css" href="css/style-c0a468a3ca.css" media="all">
+    <link rel="stylesheet" type="text/css" href="css/mobile-7b61bb598e.css" media="screen and (max-width:800px)">
+    <link rel="stylesheet" type="text/css" href="css/pc-ff2c0eaac6.css" media="screen and (min-width:800px)">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <!--[if lte IE 8]>
+        <script>
+            location.href = "https://ones.ai/project/unsupport.html"
+        </script>
+        <link  rel="stylesheet" type="text/css" href="css/ie8-f2dacbe43f.css">
+    <![endif]-->
+    <!--[if IE 9]>
+        <link  rel="stylesheet" type="text/css" href="css/ie9-0c4fe709bd.css">
+    <![endif]-->
+    <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+    <link rel="icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+    <meta name="keywords" content="ones,万事,ones demo,免费项目管理软件,研发项目管理,项目管理软件">
+    <meta name="description" content="ONES 现在有免费版与专业版可供选择，支持公用云，私有云，本地服务器三种交付方式。">
+    <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+    <script type="text/javascript" async="" src="//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js"></script>
+    <script src="https://hm.baidu.com/hm.js?74b5f61e31435aedafb0ca993b7ffa9e"></script>
+    <script async="" src="js/jsLib/sensorsdata.min.js"></script>
+    <script type="text/javascript" src="js/variable-6c8919d1f4.js"></script>
+    <script src="js/jsLib/jQuery.js"></script>
+    <script src="js/jsLib/R_tool.js"></script>
+    <script src="js/jsLib/ua-device.js"></script>
+    <script type="text/javascript" src="js/jsLib/jqmousewhell.js"></script>
+    <script type="text/javascript" src="js/unsupport-8950950bc8.js"></script><!-- 神策 sdk -->
+    <script src="js/jsLib/sensorsdata.min.js"></script>
+    <script src="js/jsLib/heatmap.min.js"></script>
+    <script>(function (para) {
+            var p = para.sdk_url, n = para.name, w = window, d = document, s = 'script', x = null, y = null;
+            w['sensorsDataAnalytic201505'] = n;
+            w[n] = w[n] || function (a) { return function () { (w[n]._q = w[n]._q || []).push([a, arguments]); } };
+            var ifs = ['track', 'quick', 'register', 'registerPage', 'registerOnce', 'clearAllRegister', 'trackSignup', 'trackAbtest', 'setProfile', 'setOnceProfile', 'appendProfile', 'incrementProfile', 'deleteProfile', 'unsetProfile', 'identify', 'login', 'logout', 'trackLink', 'clearAllRegister'];
+            for (var i = 0; i < ifs.length; i++) {
+                w[n][ifs[i]] = w[n].call(null, ifs[i]);
+            }
+            if (!w[n]._t) {
+                x = d.createElement(s), y = d.getElementsByTagName(s)[0];
+                x.async = 1;
+                x.src = p;
+                y.parentNode.insertBefore(x, y);
+                w[n].para = para;
+            }
+        })({
+            sdk_url: 'js/jsLib/sensorsdata.min.js',
+            heatmap_url: 'js/jsLib/heatmap.min.js',
+            name: 'sa',
+            server_url: isProduction
+                ? 'https://dc.ones.ai/sa?project=production'
+                : 'https://dc.ones.ai/sa?project=default',
+            // show_log: !isProduction,
+            show_log: false,
+            current_domain: isProduction
+                ? 'ones.ai'
+                : 'dev.ones.team',
+            heatmap: {
+                clickmap: 'default',
+                scroll_notice_map: 'default',
+            }
+        });
+        // 神策 autoTrack 默认只采集 a, input, button 元素的数据，这里扩展一下
+        // 如果有需求，给目标元素加上 track-web-cick 的类名即可
+        $(document).on('click', '.track-web-click', function () {
+            sa.quick('trackHeatMap', this);
+        });
+
+        sa.quick('autoTrack'); //神策系统必须是1.4最新版及以上</script><!-- end sensors data -->
+    <script language="JavaScript">// 存储用户来源，用于统计用户来源。
+        var is_IE = function (ver) {
+            var b = document.createElement('b')
+            b.innerHTML = '<!--[if IE ' + ver + ']><i></i><![endif]-->'
+            return b.getElementsByTagName('i').length === 1
+        }
+        if (
+            document.referrer != '' &&
+            document.referrer != null &&
+            document.referrer.indexOf('https://ones.ai') !== 0
+        ) {
+            localStorage.setItem('referrer', Rtool.decodeURL(document.referrer));
+        };
+        var argMap = Rtool.getArgs();
+        var keyword = argMap.utm_term || argMap.keyword;
+        var channel = argMap.utm_source || argMap.channel;
+        if (keyword != null && keyword != '') {
+            localStorage.setItem('keyword', keyword);
+        };
+        if (channel != null && channel != '') {
+            localStorage.setItem('channel', channel);
+        }</script>
+    <script>var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?74b5f61e31435aedafb0ca993b7ffa9e";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();</script><!-- start Mixpanel -->
+    <script type="text/javascript">(function (e, a) {
+            if (!a.__SV) {
+                var b = window; try { var c, l, i, j = b.location, g = j.hash; c = function (a, b) { return (l = a.match(RegExp(b + "=([^&]*)"))) ? l[1] : null }; g && c(g, "state") && (i = JSON.parse(decodeURIComponent(c(g, "state"))), "mpeditor" === i.action && (b.sessionStorage.setItem("_mpcehash", g), history.replaceState(i.desiredHash || "", e.title, j.pathname + j.search))) } catch (m) { } var k, h; window.mixpanel = a; a._i = []; a.init = function (b, c, f) {
+                    function e(b, a) {
+                        var c = a.split("."); 2 == c.length && (b = b[c[0]], a = c[1]); b[a] = function () {
+                            b.push([a].concat(Array.prototype.slice.call(arguments,
+                                0)))
+                        }
+                    } var d = a; "undefined" !== typeof f ? d = a[f] = [] : f = "mixpanel"; d.people = d.people || []; d.toString = function (b) { var a = "mixpanel"; "mixpanel" !== f && (a += "." + f); b || (a += " (stub)"); return a }; d.people.toString = function () { return d.toString(1) + ".people (stub)" }; k = "disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config reset people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+                    for (h = 0; h < k.length; h++)e(d, k[h]); a._i.push([b, c, f])
+                }; a.__SV = 1.2; b = e.createElement("script"); b.type = "text/javascript"; b.async = !0; b.src = "undefined" !== typeof MIXPANEL_CUSTOM_LIB_URL ? MIXPANEL_CUSTOM_LIB_URL : "file:" === e.location.protocol && "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//) ? "https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js" : "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js"; c = e.getElementsByTagName("script")[0]; c.parentNode.insertBefore(b, c)
+            }
+        })(document, window.mixpanel || []);
+        mixpanel.init("5a1fc7bd8faaa6937f18a4fb6c0cb1db");</script><!-- end Mixpanel -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-134717999-1"></script>
+    <script>window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', isProduction ? 'UA-134717999-1' : 'UA-134713596-1');</script>
+</head>
+
+<body class="@@bodyClassName">
+    <!-- trace:website/pc_only.html -->
+    <div class="top-nav-constance index-pc">
+        <div class="top-nav normal-width"><a class="top-nav-logo" href="index.html"></a>
+            <div class="top-hamburger"></div>
+            <div class="top-nav-ul" data-focus-li="@@focus">
+                <!--<a data-focus="index" href="index.html">首页</a>-->
+                <div data-focus="product" class="top-nav-ul-drop-down-able top-nav-left"><span class="top-nav-ul-drop-down-span"
+                        type="button">产品<div class="top-nav-ul-drop-arrow"></div></span>
+                    <div class="product-nav-dropdown top-nav-ul-drop-down-list"><a class="product-nav-first" href="project.html">
+                            <div class="product-nav-title">ONES Project</div>
+                            <div class="product-nav-content">一站式敏捷开发协作平台</div>
+                        </a><a href="pipeline.html">
+                            <div class="product-nav-title">ONES Pipeline</div>
+                            <div class="product-nav-content">轻松实践 DevOps 全流程</div>
+                        </a><a href="testcase.html">
+                            <div class="product-nav-title">ONES TestCase</div>
+                            <div class="product-nav-content">用例管理与缺陷追踪方案</div>
+                        </a><a href="wiki.html">
+                            <div class="product-nav-title">ONES Wiki</div>
+                            <div class="product-nav-content">一起构建团队知识库</div>
+                        </a></div>
+                </div>
+                <div data-focus="solution" class="top-nav-ul-drop-down-able top-nav-left"><span class="top-nav-ul-drop-down-span"
+                        type="button">解决方案<div class="top-nav-ul-drop-arrow"></div></span>
+                    <div class="product-nav-dropdown top-nav-ul-drop-down-list solution"><a class="product-nav-first"
+                            href="solutions_fintech.html">
+                            <div class="product-nav-title">金融科技行业</div>
+                        </a><a href="solutions_game.html">
+                            <div class="product-nav-title">游戏行业</div>
+                        </a><a href="solutions_social.html">
+                            <div class="product-nav-title">娱乐社交行业</div>
+                        </a><a href="solutions_newretail.html">
+                            <div class="product-nav-title">新零售行业</div>
+                        </a></div>
+                </div><a data-focus="case" class="top-nav-left" href="case.html">客户案例</a> <a data-focus="price" class="top-nav-left"
+                    href="pricing.html">产品定价</a> <a target="_blank" class="top-nav-left" href="https://help.ones.ai/ones/">帮助文档</a>
+                <div class="top-nav-right">
+                    <div class="top-registered track-web-click"><span class="index-pc">体验 Demo</span></div>
+                    <div class="top-contact track-web-click"><span class="top-contact-img"></span> <span class="top-contact-label">免费注册</span></div><a
+                        class="top-login track-web-click" href="https://ones.ai/project/#/home"><span class="top-login-img"></span>
+                        <span class="top-login-label">登录</span></a>
+                </div>
+            </div>
+            <!--<div class="top-button index-mobile">-->
+            <!--注册-->
+            <!--</div>-->
+        </div>
+    </div><a href="sign_up.html?s=0" class="mobile-top-registered @@signClassName">免费使用</a>
+    <script src="js/top_nav-b7932d27d2.js"></script>
+    <script>$('.top-registered').click(function () {
+            if (isProduction) {
+                mixpanel.track("topbar_Demo click");
+                _hmt.push(['_trackEvent', 'topbar_Demo click', 'Button click'])
+            } else {
+                console.log("topbar_Demo click");
+            }
+            location.href = "demo.html";
+        });
+        $(document).on('blur', 'input', function () {
+            var isPassword = this.type === 'password';
+            var isApplyInput = this.hasAttribute('data-text');
+            if (!isPassword) {
+                sa.track(isApplyInput ? 'contact_us' : 'informationInput', {
+                    type: $(this).attr('data-content-type')
+                        || $(this).attr('placeholder')
+                        || '未知',
+                    content: $(this).val()
+                })
+            }
+        });
+        $(document).on('change', 'select', function () {
+            sa.track('informationInput', {
+                type: $(this).attr('data-content-type') || '未知',
+                content: $(this).val()
+            })
+        });</script>
+    <div class="pc-only"><a class="top-bar" href="/"></a>
+        <div class="content">
+            <div class="img"></div>
+            <div class="title">此内容不支持移动端查看</div>
+            <div class="subtitle">请在电脑上打开浏览器访问</div>
+        </div>
+    </div>
+</body>
+
+</html>

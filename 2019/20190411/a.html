@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>关于我们 | ONES</title>
+    <link rel="stylesheet" type="text/css" href="css/style-c0a468a3ca.css" media="all">
+    <link rel="stylesheet" type="text/css" href="css/mobile-7b61bb598e.css" media="screen and (max-width:800px)">
+    <link rel="stylesheet" type="text/css" href="css/pc-ff2c0eaac6.css" media="screen and (min-width:800px)">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <!--[if lte IE 8]>
+        <script>
+            location.href = "https://ones.ai/project/unsupport.html"
+        </script>
+        <link  rel="stylesheet" type="text/css" href="css/ie8-f2dacbe43f.css">
+    <![endif]-->
+    <!--[if IE 9]>
+        <link  rel="stylesheet" type="text/css" href="css/ie9-0c4fe709bd.css">
+    <![endif]-->
+    <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+    <link rel="icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+    <meta name="keywords" content="ones,万事,研发项目管理,项目管理软件,缺陷管理,知识库,知识管理,敏捷开发,devops">
+    <meta name="description" content="ONES 成立于2015年，致力于为研发型企业提供敏捷开发和 DevOps 解决方案。">
+    <script type="text/javascript" async="" src="https://widget.intercom.io/widget/spkug8a4"></script>
+    <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+    <script type="text/javascript" async="" src="//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js"></script>
+    <script src="https://hm.baidu.com/hm.js?74b5f61e31435aedafb0ca993b7ffa9e"></script>
+    <script async="" src="js/jsLib/sensorsdata.min.js"></script>
+    <script type="text/javascript" src="js/variable-3fed3780ec.js"></script>
+    <script src="js/jsLib/jQuery.js"></script>
+    <script src="js/jsLib/R_tool.js"></script>
+    <script src="js/jsLib/ua-device.js"></script>
+    <script type="text/javascript" src="js/jsLib/jqmousewhell.js"></script>
+    <script type="text/javascript" src="js/unsupport-8950950bc8.js"></script><!-- 神策 sdk -->
+    <script src="js/jsLib/sensorsdata.min.js"></script>
+    <script src="js/jsLib/heatmap.min.js"></script>
+    <script>(function (para) {
+            var p = para.sdk_url, n = para.name, w = window, d = document, s = 'script', x = null, y = null;
+            w['sensorsDataAnalytic201505'] = n;
+            w[n] = w[n] || function (a) { return function () { (w[n]._q = w[n]._q || []).push([a, arguments]); } };
+            var ifs = ['track', 'quick', 'register', 'registerPage', 'registerOnce', 'clearAllRegister', 'trackSignup', 'trackAbtest', 'setProfile', 'setOnceProfile', 'appendProfile', 'incrementProfile', 'deleteProfile', 'unsetProfile', 'identify', 'login', 'logout', 'trackLink', 'clearAllRegister'];
+            for (var i = 0; i < ifs.length; i++) {
+                w[n][ifs[i]] = w[n].call(null, ifs[i]);
+            }
+            if (!w[n]._t) {
+                x = d.createElement(s), y = d.getElementsByTagName(s)[0];
+                x.async = 1;
+                x.src = p;
+                y.parentNode.insertBefore(x, y);
+                w[n].para = para;
+            }
+        })({
+            sdk_url: 'js/jsLib/sensorsdata.min.js',
+            heatmap_url: 'js/jsLib/heatmap.min.js',
+            name: 'sa',
+            server_url: isProduction
+                ? 'https://dc.ones.ai/sa?project=production'
+                : 'https://dc.ones.ai/sa?project=default',
+            // show_log: !isProduction,
+            show_log: false,
+            current_domain: isProduction
+                ? 'ones.ai'
+                : 'dev.ones.team',
+            heatmap: {
+                clickmap: 'default',
+                scroll_notice_map: 'default',
+            }
+        });
+        // 神策 autoTrack 默认只采集 a, input, button 元素的数据，这里扩展一下
+        // 如果有需求，给目标元素加上 track-web-cick 的类名即可
+        $(document).on('click', '.track-web-click', function () {
+            sa.quick('trackHeatMap', this);
+        });
+
+        sa.quick('autoTrack'); //神策系统必须是1.4最新版及以上</script><!-- end sensors data -->
+    <script language="JavaScript">// 存储用户来源，用于统计用户来源。
+        var is_IE = function (ver) {
+            var b = document.createElement('b')
+            b.innerHTML = '<!--[if IE ' + ver + ']><i></i><![endif]-->'
+            return b.getElementsByTagName('i').length === 1
+        }
+        if (
+            document.referrer != '' &&
+            document.referrer != null &&
+            document.referrer.indexOf('https://ones.ai') !== 0
+        ) {
+            localStorage.setItem('referrer', Rtool.decodeURL(document.referrer));
+        };
+        var argMap = Rtool.getArgs();
+        var keyword = argMap.utm_term || argMap.keyword;
+        var channel = argMap.utm_source || argMap.channel;
+        if (keyword != null && keyword != '') {
+            localStorage.setItem('keyword', keyword);
+        };
+        if (channel != null && channel != '') {
+            localStorage.setItem('channel', channel);
+        }</script>
+    <script>var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?74b5f61e31435aedafb0ca993b7ffa9e";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();</script><!-- start Mixpanel -->
+    <script type="text/javascript">(function (e, a) {
+            if (!a.__SV) {
+                var b = window; try { var c, l, i, j = b.location, g = j.hash; c = function (a, b) { return (l = a.match(RegExp(b + "=([^&]*)"))) ? l[1] : null }; g && c(g, "state") && (i = JSON.parse(decodeURIComponent(c(g, "state"))), "mpeditor" === i.action && (b.sessionStorage.setItem("_mpcehash", g), history.replaceState(i.desiredHash || "", e.title, j.pathname + j.search))) } catch (m) { } var k, h; window.mixpanel = a; a._i = []; a.init = function (b, c, f) {
+                    function e(b, a) {
+                        var c = a.split("."); 2 == c.length && (b = b[c[0]], a = c[1]); b[a] = function () {
+                            b.push([a].concat(Array.prototype.slice.call(arguments,
+                                0)))
+                        }
+                    } var d = a; "undefined" !== typeof f ? d = a[f] = [] : f = "mixpanel"; d.people = d.people || []; d.toString = function (b) { var a = "mixpanel"; "mixpanel" !== f && (a += "." + f); b || (a += " (stub)"); return a }; d.people.toString = function () { return d.toString(1) + ".people (stub)" }; k = "disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config reset people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+                    for (h = 0; h < k.length; h++)e(d, k[h]); a._i.push([b, c, f])
+                }; a.__SV = 1.2; b = e.createElement("script"); b.type = "text/javascript"; b.async = !0; b.src = "undefined" !== typeof MIXPANEL_CUSTOM_LIB_URL ? MIXPANEL_CUSTOM_LIB_URL : "file:" === e.location.protocol && "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//) ? "https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js" : "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js"; c = e.getElementsByTagName("script")[0]; c.parentNode.insertBefore(b, c)
+            }
+        })(document, window.mixpanel || []);
+        mixpanel.init("5a1fc7bd8faaa6937f18a4fb6c0cb1db");</script><!-- end Mixpanel -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-134717999-1"></script>
+    <script>window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', isProduction ? 'UA-134717999-1' : 'UA-134713596-1');</script>
+</head>
+
+<body class="@@bodyClassName">
+    <!-- trace:website/joinus.html -->
+    <div class="top-nav-constance white-top-nav">
+        <div class="top-nav normal-width"><a class="top-nav-logo" href="index.html"></a>
+            <div class="top-hamburger"></div>
+            <div class="top-nav-ul" data-focus-li="alwaysWhite">
+                <!--<a data-focus="index" href="index.html">首页</a>-->
+                <div data-focus="product" class="top-nav-ul-drop-down-able top-nav-left"><span class="top-nav-ul-drop-down-span"
+                        type="button">产品<div class="top-nav-ul-drop-arrow"></div></span>
+                    <div class="product-nav-dropdown top-nav-ul-drop-down-list"><a class="product-nav-first" href="project.html">
+                            <div class="product-nav-title">ONES Project</div>
+                            <div class="product-nav-content">一站式敏捷开发协作平台</div>
+                        </a><a href="pipeline.html">
+                            <div class="product-nav-title">ONES Pipeline</div>
+                            <div class="product-nav-content">轻松实践 DevOps 全流程</div>
+                        </a><a href="testcase.html">
+                            <div class="product-nav-title">ONES TestCase</div>
+                            <div class="product-nav-content">用例管理与缺陷追踪方案</div>
+                        </a><a href="wiki.html">
+                            <div class="product-nav-title">ONES Wiki</div>
+                            <div class="product-nav-content">一起构建团队知识库</div>
+                        </a></div>
+                </div>
+                <div data-focus="solution" class="top-nav-ul-drop-down-able top-nav-left"><span class="top-nav-ul-drop-down-span"
+                        type="button">解决方案<div class="top-nav-ul-drop-arrow"></div></span>
+                    <div class="product-nav-dropdown top-nav-ul-drop-down-list solution"><a class="product-nav-first"
+                            href="solutions_fintech.html">
+                            <div class="product-nav-title">金融科技行业</div>
+                        </a><a href="solutions_game.html">
+                            <div class="product-nav-title">游戏行业</div>
+                        </a><a href="solutions_social.html">
+                            <div class="product-nav-title">娱乐社交行业</div>
+                        </a><a href="solutions_newretail.html">
+                            <div class="product-nav-title">新零售行业</div>
+                        </a></div>
+                </div><a data-focus="case" class="top-nav-left" href="case.html">客户案例</a> <a data-focus="price" class="top-nav-left"
+                    href="pricing.html">产品定价</a> <a target="_blank" class="top-nav-left" href="https://help.ones.ai/ones/">帮助文档</a>
+                <div class="top-nav-right">
+                    <div class="top-registered track-web-click"><span class="index-pc">体验 Demo</span></div>
+                    <div class="top-contact track-web-click"><span class="top-contact-img"></span> <span class="top-contact-label">免费注册</span></div><a
+                        class="top-login track-web-click" href="https://ones.ai/project/#/home"><span class="top-login-img"></span>
+                        <span class="top-login-label">登录</span></a>
+                </div>
+            </div>
+            <!--<div class="top-button index-mobile">-->
+            <!--注册-->
+            <!--</div>-->
+        </div>
+    </div><a href="sign_up.html?s=0" class="mobile-top-registered @@signClassName">免费使用</a>
+    <script src="js/top_nav-5dda8e4def.js"></script>
+    <script>$('.top-registered').click(function () {
+            if (isProduction) {
+                mixpanel.track("topbar_Demo click");
+                _hmt.push(['_trackEvent', 'topbar_Demo click', 'Button click'])
+            } else {
+                console.log("topbar_Demo click");
+            }
+            location.href = "demo.html";
+        });
+        $(document).on('blur', 'input', function () {
+            var isPassword = this.type === 'password';
+            var isApplyInput = this.hasAttribute('data-text');
+            if (!isPassword) {
+                sa.track(isApplyInput ? 'contact_us' : 'informationInput', {
+                    type: $(this).attr('data-content-type')
+                        || $(this).attr('placeholder')
+                        || '未知',
+                    content: $(this).val()
+                })
+            }
+        });
+        $(document).on('change', 'select', function () {
+            sa.track('informationInput', {
+                type: $(this).attr('data-content-type') || '未知',
+                content: $(this).val()
+            })
+        });</script>
+    <div class="introduction-nav">
+        <div class="bg">
+            <div class="title normal-width">ONES</div>
+            <div class="desc normal-width">企业级研发管理解决方案</div>
+        </div>
+        <div class="nav-ul">
+            <div class="normal-width"><a href="about.html" class="nav-ul-li">关于我们</a> <a href="contactus.html" class="nav-ul-li">联系我们</a>
+                <a href="joinus.html" class="nav-ul-li active">加入我们</a> <a href="cooperation.html" class="nav-ul-li">合作伙伴</a></div>
+        </div>
+    </div>
+    <div class="join-us normal-width">
+        <div class="introduction-title">加入我们</div>
+        <div class="introduction-line"></div>
+        <div class="join-us-job">
+            <div class="join-us-job-title">WEB 前端</div>
+            <div class="join-us-job-content">
+                <div class="join-us-job-content-cat">职位描述:</div>
+                <div class="join-us-job-content-paragraph">- 对产品、设计需求给出技术评估和解决方案；<br>- 利用各种 Web
+                    技术实现产品功能，参与项目开发，管理负责项目的时间进度；<br>- 攻克实现工作中遇到的性能、架构等技术难点；<br>- 参与公司 Web 前端的架构设计、标准及规范制定；<br></div>
+                <div class="join-us-job-content-cat">职位要求：</div>
+                <div class="join-us-job-content-paragraph">- 全日制大学本科或以上学历，3 年或以上相关工作经验；<br>- 精通 HTML 和 CSS 及
+                    ES6/7，熟悉一种前端 mvc/mvvm 开发框架 (AngularJS、React、Vue 等)；<br>- 熟悉 TCP/IP，特别是 HTTP 协议；<br>- 了解常见的 Web
+                    性能优化方法；<br>- 了解常见的数据结构和算法；<br>- 完全理解常见的 Web 攻击方法和对应的防御方案；<br>- 良好的分析处理问题能力、业务理解能力；<br>-
+                    良好的英文文档阅读能力，良好的团队沟通和协作能力；<br>- 加分项：熟悉现代前端开发常用工具链：如 gulp、webpack、babel 等；<br></div>
+                <div class="join-us-job-content-cat">简历投递：</div>
+                <div class="join-us-job-content-paragraph"><a type="email" href="mailto:hr@ones.ai">hr@ones.ai</a><br></div>
+            </div>
+        </div>
+        <div class="introduction-line"></div>
+        <div class="join-us-job">
+            <div class="join-us-job-title">后端</div>
+            <div class="join-us-job-content">
+                <div class="join-us-job-content-cat">职位描述:</div>
+                <div class="join-us-job-content-paragraph">- 对产品、设计需求给出技术评估和解决方案；<br>- 参与项目开发，管理负责项目的时间进度；<br>-
+                    攻克实现工作中遇到的性能、架构等技术难点；<br>- 参与公司 Golang、后端的架构设计、标准及规范制定；<br></div>
+                <div class="join-us-job-content-cat">职位要求：</div>
+                <div class="join-us-job-content-paragraph">- 全日制大学本科或以上学历，3 年或以上相关工作经验；<br>- 熟悉 Golang、Java、Python、Ruby
+                    中至少一种编程语言；<br>- 熟悉常见的数据结构和算法；<br>- 熟悉 TCP/IP，特别是 HTTP 协议；<br>- 熟悉 Linux 常用 CLI 工具，熟悉 Shell 编写；<br>-
+                    熟悉 Nginx、MySQL、Redis、ES 等常见中间的使用及其性能调优方法；<br>- 熟悉常见的容灾、高可用架构；<br>- 了解 DevOps，对灰度发布有一定经验；<br>-
+                    良好的分析处理问题能力、业务理解能力；<br>- 良好的英文文档阅读能力，良好的团队沟通和协作能力；<br></div>
+                <div class="join-us-job-content-cat">加分项：</div>
+                <div class="join-us-job-content-paragraph">- 熟悉 Docker、Kubernetes；</div>
+                <div class="join-us-job-content-cat">简历投递：</div>
+                <div class="join-us-job-content-paragraph"><a type="email" href="mailto:hr@ones.ai">hr@ones.ai</a><br></div>
+            </div>
+        </div>
+        <div class="introduction-line"></div>
+        <div class="join-us-job">
+            <div class="join-us-job-title">产品经理</div>
+            <div class="join-us-job-content">
+                <div class="join-us-job-content-cat">职位描述:</div>
+                <div class="join-us-job-content-paragraph">- 完成用户需求收集和竞品调研工作；<br>- 结合公司战略目标，提出产品解决方案；<br>-
+                    与交互设计和技术研发配合，推进进度，达成产品最后交付；<br>- 主要负责 ONES 核心工具链的设计；<br></div>
+                <div class="join-us-job-content-cat">职位要求：</div>
+                <div class="join-us-job-content-paragraph">- 全日制大学本科或以上学历，2 年或以上相关工作经验；<br>- 能独立完成产品设计文档、产品设计原型；<br>-
+                    良好的团队沟通和协作能力，能推进项目进度，保证质量交付；<br></div>
+                <div class="join-us-job-content-cat">加分项：</div>
+                <div class="join-us-job-content-paragraph">- 工具控、熟悉各类优秀生产力工具；<br>- 有企业服务软件项目经历；<br></div>
+                <div class="join-us-job-content-cat">简历投递：</div>
+                <div class="join-us-job-content-paragraph"><a type="email" href="mailto:hr@ones.ai">hr@ones.ai</a><br></div>
+            </div>
+        </div>
+        <div class="introduction-line"></div>
+        <div class="join-us-job">
+            <div class="join-us-job-title">UI 设计</div>
+            <div class="join-us-job-content">
+                <div class="join-us-job-content-cat">职位描述:</div>
+                <div class="join-us-job-content-paragraph">- 负责统领公司所有产品体系视觉设计工作并对产品最终的视觉体验负责；<br>- 制定产品的 UI
+                    标准并协调推进统一整个产品的视觉风格落地；<br>- 持续关注业界的发展，并对产品当前设计提出改进建议；<br>- 带领并指导设计部所有项目的创意构思，提升设计部工作水平与效率；<br>- 主要负责
+                    ONES 核心工具链的主创设计；<br></div>
+                <div class="join-us-job-content-cat">职位要求：</div>
+                <div class="join-us-job-content-paragraph">- 全日制大学本科及以上学历，4 年或以上 Web/Android/iOS UI 设计相关工作经验；<br>- 熟练使用
+                    Sketch / Photoshop&nbsp; 中至少一种设计工具；<br>- 良好的美术功底及审美能力，态度积极，对自己专业能力有不断提高的要求，关注业界的最新动向并思考如何运用到实际工作中；<br>-
+                    能完整的理解产品需求，工作负责，求精，刻苦，良好的沟通能力，能以自身专业能力推进产品发展；<br>- 请附上你的最满意的若干份作品；<br></div>
+                <div class="join-us-job-content-cat">加分项：</div>
+                <div class="join-us-job-content-paragraph">- 有复杂交互网页产品设计经历；<br>- 有大型 SaaS 产品设计经历；<br></div>
+                <div class="join-us-job-content-cat">简历投递：</div>
+                <div class="join-us-job-content-paragraph"><a type="email" href="mailto:hr@ones.ai">hr@ones.ai</a><br></div>
+            </div>
+        </div>
+        <div class="introduction-line"></div>
+        <!-- <div class="join-us-job">
+        <div class="join-us-job-title">项目经理</div>
+        <div class="join-us-job-content">
+            <div class="join-us-job-content-cat">职位描述:</div>
+            <div class="join-us-job-content-paragraph">
+                - 负责公司自主研发的项目管理系统的直销工作；<br>
+                - 面向互联网及游戏等各垂直行业目标客户进行业务拓展，寻求潜在客户并推进销售项目；<br>
+                - 定期拜访目标客户，积极引导企业客户和挖掘客户需求，制定合理销售策略，达成制定的销售指标，协助方案的有效交付；<br>
+                - 维持与大客户的良好业务关系，及时更新公司产品信息，传达企业及品牌文化；<br>
+                - 建立与行业内合作伙伴的广泛联系，形成长期、互信的良好合作关系。<br>
+            </div>
+            <div class="join-us-job-content-cat">职位要求：</div>
+            <div class="join-us-job-content-paragraph">
+                - 本科及以上学历，计算机或通信等相关专业优先；<br>
+                - 对互联网/SaaS 产品或企业级应用有一定的了解；<br>
+                - 具有良好的谈判能力和说服及语言表达能力，能够独立完成大客户销售与订单签订； <br>
+                - 具备较强的学习能力，乐观、积极进取、为人正直，敢于面对压力和挑战。<br>
+            </div>
+
+            <div class="join-us-job-content-cat">简历投递：</div>
+            <div class="join-us-job-content-paragraph">
+                <a type="email" href="mailto:hr@ones.ai">hr@ones.ai</a><br>
+            </div>
+        </div>
+    </div>
+    <div class="introduction-line"></div> -->
+        <div class="join-us-job">
+            <div class="join-us-job-title">销售经理</div>
+            <div class="join-us-job-content">
+                <div class="join-us-job-content-cat">职位描述:</div>
+                <div class="join-us-job-content-paragraph">- 挖掘和整理客户信息，通过电话与客户建立联系;<br>- 解决用户在了解过程中的问题，并进行 demo 演示；<br>-
+                    拜访客户，搜集有效信息并分析客户需求，提出解决方案；<br>- 参与商务谈判、合同签订，顺利实施以及协助售后服务；<br>- 完成销售业绩考核，达成团队销售额、回款等目标；<br>-
+                    维护既有客户资源，保持客户沟通确保客户继续使用公司服务，挖掘及激发客户发展需求，不断扩展业绩规模；<br></div>
+                <div class="join-us-job-content-cat">职位要求：</div>
+                <div class="join-us-job-content-paragraph">- 计算机或通信等相关专业优先；<br>- 对互联网/SaaS产品或企业级应用有一定的了解；<br>-
+                    具备良好销售技巧与谈判能力，执行力强；<br>- 有良好语言表达能力，反应灵敏，逻辑思考或说话有条理，具有持续学习的心态；<br>-
+                    具备较强的学习能力，乐观、积极进取、为人正直，敢于面对压力和挑战；<br></div>
+                <div class="join-us-job-content-cat">简历投递：</div>
+                <div class="join-us-job-content-paragraph"><a type="email" href="mailto:hr@ones.ai">hr@ones.ai</a><br></div>
+            </div>
+        </div>
+        <div class="introduction-line"></div>
+    </div>
+    <script language="JavaScript">$(".join-us-job-title").click(function () {
+            if ($(this).hasClass('active')) {
+                $(this).removeClass('active').parent().children(".join-us-job-content").slideUp('fast');
+            } else {
+                $(".join-us-job-title").removeClass("active");
+                var self = $(this).addClass("active").parent().children(".join-us-job-content");
+                $(".join-us-job-content").not(self).stop().slideUp('fast');
+                self.slideDown('fast');
+            }
+        });</script>
+    <div class="try-use">
+        <div class="tru-use-content">
+            <div class="try-use-hint">开启高效研发之旅</div>
+            <div class="try-use-title">ONES 支持免费使用，以帮助您快速上手和了解 。您也可以直接与我们的解决方案专家沟通，了解和评估 ONES 如何帮助您的团队更进一步。</div>
+            <div class="try-use-input">
+                <!--<input class="try-use-email email-input" placeholder="请输入邮箱地址...">-->
+                <div class="top-content-try-button try-use-button track-web-click"><span>免费使用</span></div>
+                <div class="top-content-concat-button track-web-click contact-us-button">联系我们</div>
+            </div>
+        </div>
+        <div class="try-use-bk"></div>
+        <div class="tilt-triangle tilt-triangle-bottom-right"></div>
+    </div>
+    <!--<div class="try-use tilt-component">-->
+    <!--<div class="try-use-bk"></div>-->
+    <!--<div class="tru-use-content">-->
+    <!--<div class="try-use-hint">-->
+    <!--准备好了吗？-->
+    <!--</div>-->
+    <!--<div class="try-use-title">-->
+    <!--来开启高效研发之旅！-->
+    <!--</div>-->
+    <!--<div class="try-use-input">-->
+    <!--<form class="registered-form">-->
+    <!--<input class="try-use-email email-input" placeholder="请输入邮箱地址...">-->
+    <!--<div class="try-use-button registered-form-submit">马上体验</div>-->
+    <!--</form>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--<div class="tilt-triangle tilt-triangle-bottom-right">-->
+    <!--</div>-->
+    <!--</div>-->
+    <div class="footer normal-width"><a href="http://a.app.qq.com/o/simple.jsp?pkgname=ai.ones.project.android" class="index-mobile footer-mobile-download"><span
+                class="footer-mobile-download-icon"></span> <span class="footer-mobile-download-content">手机版下载</span></a>
+        <div class="company-message index-mobile">
+            <div class="company-contact">
+                <div class="company-contact-cell">
+                    <div class="company-contact-cell-ico ico-phone"></div>
+                    <div class="company-contact-cell-content">400-188-1518</div>
+                </div>
+                <div class="company-contact-cell">
+                    <div class="company-contact-cell-ico ico-email"></div>
+                    <div class="company-contact-cell-content">support@ones.ai</div>
+                </div>
+                <div class="company-contact-cell">
+                    <div class="company-contact-cell-ico ico-wechat"></div>
+                    <div class="company-contact-cell-content">关注 ONES 公众号</div>
+                </div>
+                <div class="company-contact-cell index-mobile">
+                    <div class="company-contact-cell-wechat-qrcode"><img src="images/wechat_qrcodeX2-f52584fc6c.png"
+                            width="94" height="94" data-src2x="images/wechat_qrcodeX2-f52584fc6c.png" /></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-fast index-pc">
+            <div class="footer-fast-component">
+                <div class="footer-fast-title">产品</div><a href="project.html">ONES Project</a> <a href="pipeline.html">ONES
+                    Pipeline</a> <a href="testcase.html">ONES TestCase</a> <a href="wiki.html">ONES Wiki</a>
+                <!--<a>数据安全</a>-->
+            </div>
+            <div class="footer-fast-component">
+                <div class="footer-fast-title">解决方案</div><a href="solutions_fintech.html">金融科技</a> <a href="solutions_game.html">游戏</a>
+                <a href="solutions_social.html">娱乐社交</a> <a href="solutions_newretail.html">新零售</a>
+            </div>
+            <div class="footer-fast-component">
+                <div class="footer-fast-title">服务支持</div><a href="pricing.html">产品定价</a> <a target="_blank" href="https://help.ones.ai/ones/">帮助手册</a>
+                <!--<a>数据安全</a>-->
+            </div>
+            <div class="footer-fast-component">
+                <div class="footer-fast-title">关于我们</div><a href="about.html">关于 ONES</a> <a href="contactus.html">联系我们</a>
+                <a href="joinus.html">加入我们</a>
+                <!--<a>媒体报道</a>--> <a href="cooperation.html">合作伙伴</a>
+                <!--<a>隐私声明</a>-->
+            </div>
+            <div class="footer-fast-component footer-fast-component-last">
+                <div class="footer-fast-title">关注公众号</div>
+                <div class="footer-fast-wechat-code"><img src="images/wechat-qrcodeX2-b0f690ea77.png" width="98" height="98"
+                        data-src2x="images/wechat-qrcodeX2-b0f690ea77.png" /></div>
+                <div class="footer-fast-wechat-code-hint">获取更多<br>研发项目管理资讯</div>
+            </div>
+            <div class="footer-fast-component footer-fast-component-last">
+                <div class="footer-fast-title">下载移动端</div>
+                <div class="footer-fast-wechat-code"><img src="images/download_qrcodeX2-b20b101ab8.png" width="98"
+                        height="98" data-src2x="images/download_qrcodeX2-b20b101ab8.png" /></div>
+                <div class="footer-fast-wechat-code-hint">随时随地<br>了解项目进度</div>
+            </div>
+            <!-- <div class="footer-fast-component footer-download">
+            <div class="footer-fast-title">下载</div>
+            <a>
+                <span class="ios-download"></span>App Store下载
+                <div class="download-ios-qrcode">
+                    <div class="download-ios-qrcode-primary"></div>
+                    <div class="download-ios-qrcode-triangle"></div>
+                </div>
+            </a>
+            <a>
+                <span class="android-download"></span>Android 版下载
+                <div class="download-android-qrcode">
+                    <div class="download-android-qrcode-primary"></div>
+                    <div class="download-android-qrcode-triangle"></div>
+                </div>
+            </a>
+        </div> -->
+            <script>$(".footer-download").on("touchstart", "a", function () {
+                    $(this).addClass("footer-download-hover");
+                })</script>
+        </div>
+    </div>
+    <div class="apply">
+        <div class="apply-bg"></div>
+        <div class="apply-main">
+            <div class="apply-step-2">
+                <div class="apply-close"></div>
+                <div class="apply-step-header"><span class="language" data-text="index.apply.step.header">联系我们</span></div>
+                <hr class="apply-step-hr">
+                <div class="apply-hint"><span class="language" data-text="index.apply.step.hint">请填写以下信息。我们的资深顾问会在一个工作日内与您沟通，帮助您更高效地评估和使用
+                        ONES.AI。</span></div>
+                <div class="apply-input"><input data-content-type="姓名" data-name="nickname" class="placeholder-language"
+                        data-text="index.apply.step.name" id="apply-nickname" type="text" placeholder="姓名" /> <input
+                        data-content-type="手机号" data-name="phone" class="placeholder-language" data-text="index.apply.step.phone"
+                        id="apply-phone" type="text" placeholder="手机号码" /> <input data-content-type="邮箱" data-name="email"
+                        class="placeholder-language" data-text="index.apply.step.email" id="apply-email" type="text"
+                        placeholder="邮箱地址" /> <input data-content-type="团队名称" data-name="team_name" class="placeholder-language"
+                        data-text="index.apply.step.teamName" id="apply-team-name" type="text" placeholder="公司或团队名称" />
+                    <div data-name="team_scale" id="team_scale" class="apply-select team-size">
+                        <div class="select-title">团队规模</div>
+                        <ul class="select-option" data-content-type="团队规模">
+                            <li>1-30</li>
+                            <li>30-100</li>
+                            <li>100-500</li>
+                            <li>500~</li>
+                        </ul>
+                    </div>
+                    <div data-name="industry" id="industry" class="apply-select team-subjection">
+                        <div class="select-title">所属行业</div>
+                        <ul class="select-option" data-content-type="所属行业">
+                            <li>软件研发</li>
+                            <li>金融业</li>
+                            <li>建筑业</li>
+                            <li>制造业</li>
+                            <li>化学工业</li>
+                            <li>教育培训</li>
+                            <li>文化传媒</li>
+                            <li>广告营销</li>
+                            <li>游戏动漫</li>
+                            <li>电子商务</li>
+                            <li>医疗健康</li>
+                            <li>生活服务</li>
+                            <li>招聘</li>
+                            <li>其他</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="apply-button"><a href="javascript:;"><span class="language" data-text="index.apply.step.ok">确定</span></a></div>
+                <div class="otherMethod">
+                    <div class="info"><span class="title">或直接联系我们</span>
+                        <div class="line line-1"></div>
+                        <div class="line line-2"></div>
+                    </div>
+                    <div class="methods"><span class="phone"><img src="images/icon_phone_greyX2-a3fecb8ed2.png" style="width:16px;height:16px;vertical-align:text-bottom;"
+                                width="16" height="16" data-src2x="images/icon_phone_greyX2-a3fecb8ed2.png" />
+                            400-188-1518 </span><span class="email"><img src="images/icon_email_greyX2-762aeb3848.png"
+                                style="width:18px;height:14px;vertical-align:text-bottom;" width="18" height="14"
+                                data-src2x="images/icon_email_greyX2-762aeb3848.png" /> <a type="email" href="mailto:support@ones.ai">support@ones.ai</a></span></div>
+                </div>
+            </div>
+            <div class="apply-step-3">
+                <div class="apply-close"></div>
+                <div class="apply-thansk">
+                    <div class="apply-thanks-img"></div>
+                    <div class="apply-thanks-content-1"><span class="language" data-text="index.apply.step.thans">预约成功</span></div>
+                    <div class="apply-thanks-content-2"><span class="language" data-text="index.apply.step.invitemsg">感谢您的支持！我们的资深顾问会在一个工作日内与您联系。</span></div>
+                    <div class="apply-ok"><span class="language" data-text="index.apply.step.ok">确定</span></div>
+                </div>
+            </div>
+            <div class="apply-step-4">
+                <div class="apply-close"></div>
+                <div class="apply-thansk">
+                    <div class="apply-thanks-img"></div>
+                    <div class="apply-thanks-content-1">激活邮件已发送</div>
+                    <div class="apply-thanks-content-2">请检查你的邮箱，打开激活邮件里的链接。</div>
+                    <div class="apply-ok"><span class="language" data-text="index.apply.step.ok">确定</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-company-msg index-mobile @@className">
+        <div class="footer-line"></div>
+        <div class="footer-copyright">Copyright ©<span class="copyright-year">2019</span> ONES.AI 深圳复临科技有限公司 <a href="http://www.miibeian.gov.cn/">粤ICP备15032127号</a></div>
+    </div>
+    <div class="footer-company-msg index-pc">
+        <div class="normal-width">
+            <div class="footer-company-left">
+                <div class="footer-copyright">Copyright ©<span class="copyright-year">2019</span> ONES.AI 深圳复临科技有限公司 <a
+                        href="http://www.miibeian.gov.cn/">粤ICP备15032127号</a></div>
+                <div class="footer-contact">
+                    <div class="footer-contact-single-msg"><img src="images/icon_phone_greyX2-a3fecb8ed2.png" width="16"
+                            height="16" data-src2x="images/icon_phone_greyX2-a3fecb8ed2.png" />
+                        <div class="footer-contact-single-msg-content">400-188-1518</div>
+                    </div>
+                    <div class="footer-contact-single-msg"><img src="images/icon_email_greyX2-762aeb3848.png" width="18"
+                            height="14" data-src2x="images/icon_email_greyX2-762aeb3848.png" />
+                        <div class="footer-contact-single-msg-content">support@ones.ai</div>
+                    </div>
+                    <!--<div class="footer-contact-single-msg">-->
+                    <!--<img src="images/icon_wechat_grey-a29c44bfac.png" width="20" height="20">-->
+                    <!--<div class="footer-contact-single-msg-content">-->
+                    <!--公众号: 万事ONES-->
+                    <!--</div>-->
+                    <!--</div>-->
+                </div>
+            </div>
+            <div class="footer-company-right"><img src="images/footer_logo_greyX2-f3fc0a7f32.png" width="25" height="29"
+                    class="footer-company-right-img" data-src2x="images/footer_logo_greyX2-f3fc0a7f32.png" />
+                <div class="footer-company-right-line"></div>
+                <div class="footer-company-right-language">中文(简体)</div>
+            </div>
+        </div>
+    </div>
+    <script language="JavaScript">function checkAndSetFooterPoint() {
+            $(".footer-company-msg").removeClass('footer-company-msg-fixed');
+            var footerToBottom = document.documentElement.clientHeight - $(".footer-company-msg.index-pc").offset().top - $(".footer-company-msg.index-pc").height();
+            if (footerToBottom > 0 && ua.device.type == 'desktop' && window.innerWidth > 800) {
+                $(".footer-company-msg").addClass('footer-company-msg-fixed');
+            }
+        }
+        if (!is_IE(8) && !is_IE(7) && !is_IE(6)) {
+            $(window).scroll(function (e) {
+                checkAndSetFooterPoint();
+            });
+            $(window).resize(function () {
+                checkAndSetFooterPoint();
+            })
+            checkAndSetFooterPoint();
+        }</script>
+    <div class="ones-toast ones-toast-error">
+        <div class="ones-toast-content">
+            <div class="ones-toast-error-img"></div>
+            <div class="ones-toast-msg">您的邮箱已经申请过了</div><span class="ones-toast-collapse-btn"></span>
+            <div class="ones-toast-collapse-msg">
+                <div class="msg-details">
+                    <div class="detail">
+                        <div class="key"></div>
+                        <div class="value"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>var l = window.localStorage;
+        window.intercomSettings = {
+            app_id: "spkug8a4",
+            url: window.location.href,
+            user_id: l.user_id,
+            utm_source: l.channel,
+            user_name: l.user_name,
+            email: l.email,
+            team_uuid: l.team_uuid,
+            team_name: l.team_name
+        };</script>
+    <script>(function () { var w = window; var ic = w.Intercom; if (typeof ic === "function") { ic('reattach_activator'); ic('update', intercomSettings); } else { var d = document; var i = function () { i.c(arguments) }; i.q = []; i.c = function (args) { i.q.push(args) }; w.Intercom = i; function l() { var s = d.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = 'https://widget.intercom.io/widget/spkug8a4'; var x = d.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x); } if (w.attachEvent) { w.attachEvent('onload', l); } else { w.addEventListener('load', l, false); } } })()</script>
+    <script src="js/common-005e578e1e.js"></script>
+    <script src="js/language-bed86fe6e2.js"></script>
+    <script language="JavaScript">var lang = new Rlanguage.language("language");
+        lang.addAttrLanguage("placeholder-language", "placeholder");
+        lang.addAttrLanguage("language-img", "src");</script>
+    <script language="JavaScript">$('.top-content-try').children(".top-content-try-button").click(function () {
+            if (isProduction) {
+                mixpanel.track("freetouse_button click");
+                _hmt.push(['_trackEvent', 'freetouse_button click', 'Button click'])
+            } else {
+                console.log("freetouse_button click");
+            }
+        });
+        $('.try-use-input').children(".top-content-try-button").click(function () {
+            if (isProduction) {
+                mixpanel.track("freetouse_banner click");
+                _hmt.push(['_trackEvent', 'freetouse_banner click', 'Button click'])
+            } else {
+                console.log("freetouse_banner click");
+            }
+        });
+        var commitMessage = { "commit": "d0f9a73eb7f775c7716e52be66aa18a68a577dba", "build": 1533 };
+        console.log(commitMessage);</script>
+</body>
+
+</html>

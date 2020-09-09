@@ -1,0 +1,38 @@
+{
+  "service": {
+    "name": "plugin_test",
+    "id": "3C706E17-9A67-4F19-9B23-FF7632C72B16",
+    "version": "1.0.0",
+    "description": "插件范例"
+  },
+  "package": {
+    "file": "plugin_tcp_base.zip",
+    "entrance": "loadPlugin_tcp_base"
+  },
+  "apis": [
+    {
+      "name": "ping",
+      "type": "addition",
+      "method": [
+        "GET"
+      ],
+      "url": "/ping"
+    },
+    {
+      "name": "bool_list",
+      "type": "addition",
+      "method": [
+        "GET"
+      ],
+      "url": "/book/list"
+    },
+    {
+      "name": "bool_add",
+      "type": "addition",
+      "method": [
+        "POST"
+      ],
+      "url": "/book/add"
+    }
+  ]
+}

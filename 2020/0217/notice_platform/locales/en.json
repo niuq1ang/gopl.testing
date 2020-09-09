@@ -1,0 +1,12 @@
+{
+    "personal_team":"Personal Team",
+    "administrator_role_name": "administrator",
+    "request_verification_code_email_subject":"[ONES.AI] Your Code：%s",
+    "request_code_sms_body":"$$CODE$$ is your ONES.AI code, expires after 15 mins.",
+    "request_reset_code_email_subject":"[ONES.AI] Code for password resetting：%s",
+    "reset_code_sms_body":"$$CODE$$ is your ONES.AI code for password resetting, expires after 15 mins.",
+
+    "invitation_email_subject":"<Empty>",
+    "subscribe_blog_email_subject":"<Empty>",
+    "self":"self"
+}

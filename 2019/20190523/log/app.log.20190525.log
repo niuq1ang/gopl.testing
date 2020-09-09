@@ -1,0 +1,20 @@
+File opened at: 2019/05/25 16:57:50
+Built with gc go1.10.4 for darwin/amd64
+[I 2019/05/25 16:57:50.209 main.go:19] INFO should be printed
+[W 2019/05/25 16:57:50.209 main.go:20] WARN should be printed
+[E 2019/05/25 16:57:50.209 main.go:21] ERROR should be printed
+[I 2019/05/25 16:57:50.209 main.go:23] true should be printed
+[I 2019/05/25 16:57:50.209 main.go:28] IQ equal to 250
+[I 2019/05/25 16:57:50.209 main.go:30] hello | With a string field
+[I 2019/05/25 16:57:50.209 main.go:31] hello
+[I 2019/05/25 16:57:50.209 main.go:32] 1 | With an int field
+[I 2019/05/25 16:57:50.209 main.go:33] true | With a bool field
+[I 2019/05/25 16:57:50.209 main.go:34] [1 2 false] | With 3 fields
+[I 2019/05/25 16:57:50.209 main.go:35] map[a:1] | With a map
+[I 2019/05/25 16:57:50.209 main.go:36] {"a":1} | With a map and using JSONFormatter
+This message have no header
+FATAL should be printed and exit program with status code 1
+========= BEGIN STACK TRACE =========
+main.main()
+	/Users/niuqiang/go_home/src/github.com/bangwork/mygo/20190523/main.go:43 +0x989
+========== END STACK TRACE ==========
