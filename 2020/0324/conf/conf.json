@@ -1,14 +1,3 @@
 {
-	"AppID": "FSAID_1318099",
-	"AppSecret": "b71873e6cb9b455cb1b7b8cd30e304a4",
-	"AppUserId": "FSUID_830FE2043C8282D6E9EC7E13FF39BC2B",
-	"PermanentCode": "C0BE6206E417E75DDEFD0CC3AE716554",
-	"Token": "2c19457c91b64ace920dba835d042878",
-	"url": "https://open.fxiaoke.com",
-	"ones_base_url": "https://api.ones.ai",
-	"ba_users": ["方志恒", "龙宇双", "刘晶晶"],
-	"corp_id": "ww16f91cbd80fda4c3",
-    "corp_secret": "BEU0fQlUJm8mriyj8c_acclinQPUbj3mS2asRD9b8s0",
-    "agent_id": 1000020,
-    "weichat_base_url": "https://qyapi.weixin.qq.com"
+
 }
